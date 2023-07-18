@@ -176,6 +176,10 @@ section {
   height: 30rem;
   object-fit: cover;
 }
+
+/*************Home Page****************/
+
+
 #section7 .owl-carousel .item {
   height: 45rem; /* Adjust the desired height for the item divs */
   display: flex;
@@ -196,13 +200,52 @@ section {
   height: 45rem;
   object-fit: fill;
 }
+
+
 /************************section3 *******************/
 
 .bg-img{
   background: url(../images/background.jpg);
 }
 
+/************************section2 *******************/
 
+#section2{
+  background: url(../images/parkreality.jpg);
+}
+#section2 .owl-carousel .item {
+  height: 20rem; /* Adjust the desired height for the item divs */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--main-color);
+}
+
+#section2 .over{
+  font-size: 1.2rem;
+  color: var(--background-color);
+  font-weight: 600;
+}
+#section2 .section-heading{
+  font-size: 4rem;
+  font-weight: 600;
+}
+#section2 .card{
+  border-radius: 0px;
+}
+#section2 .firstcard{
+  background: var(--main-color);
+  
+}
+#section2 .firstcard p {
+  color: #ffffff;
+  
+}
+#section2 .section7p{
+  font-weight: normal;
+  line-height: 1.2;
+  font-weight: 600;
+}
 .borderimg{
   display: block;
   margin: 0 auto;

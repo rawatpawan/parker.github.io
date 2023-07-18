@@ -48,6 +48,117 @@
     </div>
     </section>
 
+    <section id="section2">
+      <p class="section-heading"> PARKER REALTY: REAL ESTATE DEVELOPER IN INDIA <br>
+        ABOUT TATA REALTY </p>
+      <img src="./images/border.png" class="borderimg" alt="border">
+      <p class="second-heading"> Providing quality life spaces through continuous innovation </p>
+      <p class="text-center">Parker Realty is one of the fastest growing real estate companies in India today.<br>
+        Its primary business is development of residential, commercial and retail properties.</p>
+        <div class="container p-3 mt-4">
+            <div class="owl-carousel two owl-theme">
+                <div class="item ">
+                  <div class="card firstcard "  >
+                      <div class="card-body mt-3 p-4 ">
+                        <p class="over">OVER</p>
+                        <p class="section-heading" style="text-align: left;"> 110+ </p>
+                        <p class="section7p"> AWARDS WON </p>
+                    </div>
+                    </div>                   
+                </div>
+                <div class="item">
+                    <div class="card"  >
+                      <div class="card-body mt-3 p-4 ">
+                        <p class="over">OVER</p>
+                        <p class="section-heading" style="text-align: left;"> 28+ </p>
+                        <p class="section7p"> YEARS OF BUILDING
+                          TRUST </p>
+                      </div>
+                    </div> 
+                  
+                </div>
+                <div class="item">
+                  <div class="card"  >
+                      <div class="card-body mt-3 p-4 ">
+                        <p class="over">PROJECTS</p>
+                        <p class="section-heading" style="text-align: left;"> 10+ </p>
+                        <p class="section7p"> DELIVERED </p>
+                    </div>
+                    </div> 
+                  
+                </div>
+                <div class="item">
+                  <div class="card"  >
+                      <div class="card-body mt-3 p-4 ">
+                        <p class="over">MORE THAN</p>
+                        <p class="section-heading" style="text-align: left;"> 30,000+ </p>
+                        <p class="section7p"> HAPPY CUSTOMERS </p>
+                    </div>
+                    </div> 
+                  
+                </div>
+                <div class="item">
+                  <div class="card"  >
+                      <div class="card-body mt-3 p-4 ">
+                        <p class="over">OVER</p>
+                        <p class="section-heading" style="text-align: left;"> 3.5 </p>
+                        <p class="section7p"> MILLION SQ.M <br>
+                          UNDER <br>
+                          DEVELOPMENT </p>
+                    </div>
+                    </div> 
+                  
+                </div>
+                <div class="item">
+                  <div class="card"  >
+                      <div class="card-body mt-3 p-4 ">
+                        <p class="over">EMPLOYEES</p>
+                        <p class="section-heading" style="text-align: left;"> 462 </p>
+                        <p class="section7p"> IN REAL ESTATE <br>
+                          DIVISION </p>
+                    </div>
+                    </div> 
+                  
+                </div>
+                <div class="item">
+                  <div class="card"  >
+                      <div class="card-body mt-3 p-4 ">
+                        <p class="over">OVER</p>
+                        <p class="section-heading" style="text-align: left;"> 30,000+ </p>
+                        <p class="section7p"> UNIT DELIVERED </p>
+                    </div>
+                    </div> 
+                  
+                </div>
+                <div class="item">
+                  <div class="card"  >
+                      <div class="card-body mt-3 p-4 ">
+                        <p class="over">OVER</p>
+                        <p class="section-heading" style="text-align: left;"> 18,000 </p>
+                        <p class="section7p"> DELIVERED HOME IN <br>
+                          THE LAST 6 YEASD </p>
+                    </div>
+                    </div> 
+                  
+                </div>
+                <div class="item">
+                  <div class="card"  >
+                      <div class="card-body mt-3 p-4 ">
+                        <p class="over">OVER</p>
+                        <p class="section-heading" style="text-align: left;"> 1000+ </p>
+                        <p class="section7p"> ASSOCIATION WITH <br>
+                          CHANNEL PARTNERS</p>
+                    </div>
+                    </div> 
+                  
+                </div>
+                
+          </div> 
+          <div class="d-flex justify-content-center mt-5">
+              <button class="ms-3 button2">Read More <i class="ms-2 fa fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+    </section>
 
     <!-- Section 3 -->
 
@@ -509,6 +620,28 @@
                   }
               }
           });
+          $('.two').owlCarousel({
+                loop:true,
+                margin:10,
+                nav: true,
+                navText: [
+                  '<i class="fa fa-angle-left"></i>',
+                  '<i class="fa fa-angle-right"></i>'
+                ],
+                dots:false,
+                autoplay:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:6
+                    }
+                }
+            })
     </script>
   </body>
 </html>
