@@ -141,6 +141,111 @@ section {
   align-items: center;
 } */
 
+/* navigation bar start  */
+
+
+
+/* .dropdown > #navbarDropdownMenuLink:hover > .submenu{ display: block; } */
+
+
+.navbar {
+  height: 12.4rem;
+  background: #ffffff;
+}
+.websiteLogo{
+  height: 8.654rem;
+  width: 18.558rem;
+}
+.navbar-nav .nav-link {
+ 
+  font-size: 1.924rem;
+  line-height: 2.308rem;
+  font-weight: 700;
+  color: var(--background-color);
+  letter-spacing: 0px;
+  margin-right: 2rem; 
+  margin-left: 2rem;  
+  text-transform: uppercase;
+}
+
+.phoneIcon{
+  height: 2.885rem;
+  width: 2.885rem;
+  margin-right: 1.2rem;
+}
+.searchIcon{
+  height: 3.365rem;
+  width: 3.365rem;
+  margin-right: 0;
+
+  
+}
+.hamburderIcon{
+  width: 3.077rem;
+  height: 2.404rem;
+  margin-right: 0;
+
+  
+}
+.fristtree{
+  background-color: var(--background-color);
+  
+}
+.fristtree .dropdown-item{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.923rem;
+  line-height: 150%;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.fristtree .dropdown-item:hover{
+  color: var(--primary-button-background);
+  background: transparent;
+}
+.dropdown-menu li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34.615rem;
+  height: 7.212rem;
+  
+}
+.navbar .navbar-nav .nav-link:hover{
+  color: var(--primary-button-background);
+}
+  @media only screen and (min-width: 960px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  
+  .dropdown:hover .fristtree {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+  }
+ 
+  
+  .dropdown .dropdown-menu {
+    display: none;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+
+
+/* .navbar ul li{
+
+} */
+
+/* navigation bar end  */
+
+
+
 #section2 .owl-carousel .item .card {
   height: 100%;
   width: 100%;
