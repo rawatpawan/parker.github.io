@@ -36,17 +36,19 @@ h3 {
   font-size: 2.2rem;
   line-height: 6rem;
   text-transform: capitalize;
+  letter-spacing: 0px;
 }
 h5{
   color: var(--background-color);
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.923rem;
   line-height: 150%;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   color: #000000;
+  letter-spacing: 0px;
+
 }
 
 
@@ -79,36 +81,7 @@ button {
 section {
   padding: 60px 0;
   overflow: hidden;
-  scroll-margin-top: 80px
-}
-
-.section-heading{
-  text-align: center;
-  color: var(--main-color);
-  text-transform: capitalize;
-  font-size: 2.5rem;
-}
-
-.second-heading{
-  text-align: center;
-  color: var(--primry-color);
-  text-transform: capitalize;
-  font-size: 2.8rem;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-
-.button1{
-  background-color: var(--main-color);
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.button2{
-  background-color: var(--primary-button-background);
-  color: #000000;
-  font-size: 1.5rem;
-  font-weight: bold;
+  /* scroll-margin-top: 80px */
 }
 
 /*************Owl Carousel dots****************/
@@ -158,18 +131,19 @@ section {
 
 
 .card {
-  box-shadow: 0 5px 8px rgba(0,0,0,0.3);
-  width: 38rem;
+  /* box-shadow: 0 5px 8px rgba(0,0,0,0.3); */
+  border: none;
 }
-.owl-carousel .item {
-  height: 60rem; /* Adjust the desired height for the item divs */
+/* .owl-carousel .item {
+  height: 60rem; 
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.owl-carousel .item .card {
+#section2 .owl-carousel .item .card {
   height: 100%;
+  width: 100%;
 }
 
 .owl-carousel .item .card-img-top {
@@ -177,7 +151,203 @@ section {
   object-fit: cover;
 }
 
+.two .owl-item, .two .item{
+  width: 21.346rem!important;
+  height: 28.75rem;
+}
+
+
+
+
 /*************Home Page****************/
+
+.section-heading{
+  text-align: center;
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-size: 3.8rem;
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 120%;
+}
+.section-heading2{
+  text-align: center;
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-size: 3.8rem;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 120%;
+}
+.second-heading{
+  text-align: center;
+  color: var(--primry-color);
+  font-size: 5rem;
+  letter-spacing: 0px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.button1{
+  background-color: var(--main-color);
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 120%;
+  width:18.58rem;
+  height:5.7rem;
+}
+.button2{
+  background-color: var(--primary-button-background);
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 120%;
+  width:18.58rem;
+  height:5.7rem;
+}
+
+/*header*/
+
+/* .header{
+  height: 100vh;
+} */
+
+#moodvideo {
+  width: 100%;
+  object-fit: cover
+}
+
+
+
+
+/************************section2 *******************/
+
+#section2{
+  background: url(../images/parkreality.jpg);
+}
+#section2 .owl-carousel .item {
+  margin-right: 1rem;
+  height: 27.6rem; 
+  /* width: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--main-color);
+  
+}
+#section2 .card:hover{
+  background: var(--main-color);
+
+}
+#section2 .card:hover p{
+  color: #FFFFFF;
+}
+#section2 .over{
+  font-size: 1.9rem;
+  color: var(--background-color);
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+#section2 .card{
+  border-radius: 0px;
+  border: none;
+}
+#section2 .over-heading{
+  font-size: 6.319rem;
+  letter-spacing: -4px;
+  font-weight: 700;
+  line-height: 120%;
+  color: var(--main-color);
+}
+#section2 .section7p{
+  font-weight: normal;
+  line-height: 1.2;
+  font-weight: 600;
+}
+#section2 .imgdiv{
+  
+  float: right;
+  clear: both;
+}
+.two .card-body{
+  padding: .7rem!important;
+}
+
+
+.imgdiv {
+  position: absolute; /* Position the image absolutely within the card content */
+  bottom: 0; /* Place the image at the bottom of the card content */
+  left: 80%; /* Center the image horizontally within the card content */
+  transform: translateX(-50%); /* Adjust the positioning for centering */
+  margin-bottom: 1.2rem; /* Add the desired gap between the image and the bottom of the card */
+}
+.borderimg{
+  display: block;
+  margin: 0 auto;
+}
+#section3{
+  padding-top: 9rem;
+  padding-bottom: 2rem;
+}
+
+#slider4 .owl-carousel .item{
+  height: auto;
+}
+
+#section5 .card-body h5{
+  color: var(--background-color);
+  font-weight: 500;
+  font-size: 1.635rem;
+}
+#section5 .card-body strong{
+  color: var(--background-color);
+  font-weight: 500;
+  font-size: 1.635rem;
+}
+#section5 .card-body p{
+  margin-top: 1rem;
+  color: var(--background-color);
+  font-weight: 400;
+  font-size: 1.635rem;
+}
+
+#section5 .card-body .carddescription p{
+
+  color: var(--background-color);
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+.highlight{
+  color: var(--background-color);
+  font-size: 1.436rem;
+  font-weight: bold;
+  padding: .5rem 1.4rem;
+  border-radius: 5px;
+  border: 2px solid var(--primary-button-background);
+}
+#section5 .owl-carousel .item .card-img-top{
+    height: 32.981rem !important;
+    object-fit: cover;
+}
+
+#section6{
+  background: url(../images/the_talk.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+
+#section9{
+  background: url(../images/contact.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
 
 
 #section7 .owl-carousel .item {
@@ -197,8 +367,17 @@ section {
   background: var(--secondary-color);
 }
 #section8 .owl-carousel .item .card-img-top {
-  height: 45rem;
-  object-fit: fill;
+  height: 32.981rem !important;
+  object-fit: cover;
+}
+
+.second .owl-item{
+  width: 43.07rem!important;
+  height: 64.712rem!important;
+  margin: 0 3.69rem;
+  margin-bottom: 5px;
+  box-shadow: 0 0px 1rem rgba(0,0,0,0.3);
+
 }
 
 
@@ -208,117 +387,60 @@ section {
   background: url(../images/background.jpg);
 }
 
-/************************section2 *******************/
-
-#section2{
-  background: url(../images/parkreality.jpg);
-}
-#section2 .owl-carousel .item {
-  height: 20rem; /* Adjust the desired height for the item divs */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid var(--main-color);
+.third .item .card-img-top {
+  height: 29.595rem;
+  object-fit: cover;
+  width: 44.712rem;
 }
 
-#section2 .over{
-  font-size: 1.2rem;
-  color: var(--background-color);
-  font-weight: 600;
+.four .owl-item {
+  width: 43.07rem!important;
+  margin: 0 3.69rem;
 }
-#section2 .section-heading{
-  font-size: 4rem;
-  font-weight: 600;
-}
-#section2 .card{
-  border-radius: 0px;
-}
-#section2 .firstcard{
-  background: var(--main-color);
-  
-}
-#section2 .firstcard p {
-  color: #ffffff;
-  
-}
-#section2 .section7p{
-  font-weight: normal;
-  line-height: 1.2;
-  font-weight: 600;
-}
-.borderimg{
-  display: block;
-  margin: 0 auto;
-}
-
-#section5 .card-body h5{
-  color: var(--background-color);
-  font-weight: 800;
-  font-size: 1.5rem;
-}
-
-#section5 .card-body p{
-  margin-top: 1rem;
-  color: var(--background-color);
-  font-weight: normal;
-  font-size: 1.5rem;
-}
-
-#section5 .card-body .carddescription p{
-
-  color: var(--background-color);
-  font-weight: normal;
-  font-size: 1.5rem;
-}
-.highlight{
-  color: var(--background-color);
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: .5rem 1.4rem;
-  border-radius: 5px;
-  border: 2px solid var(--primary-button-background);
-}
-
-
-#section6{
-  background: url(../images/the_talk.jpg);
-  background-size: cover;
-  background-position: center center;
-}
-
-
-#section9{
-  background: url(../images/contact.jpg);
-  background-size: cover;
-  background-position: center center;
-}
-
-
 
 .formdiv label{
-  font-size: 1.4rem;
-  color: var(--background-color);
-  font-weight: bold;
+  font-size: 1.93rem;
+  line-height: 150%;
+  color: #000000;
+  letter-spacing: 0px;
+  margin-bottom: 1rem;
+  font-weight: 400;
 }
 .formdiv input::placeholder {
-  font-size: 1.4rem;
-  color: var(--background-color);
-  font-weight: normal;
+  font-size: 1.93rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: #000000;
+  letter-spacing: 0px;
+  font-weight: 400;
 }
-
+.form-control-lg{
+  padding: 1rem;
+}
 .contactdetails h4{
   color: #ffffff;
-  line-height: 150%;
-  font-size: 2rem;
-  font-weight: normal;
+  line-height: 2.885rem;
+  font-size: 2.885rem;
+  font-weight: 400;
 }
 .contactdetails p{
   color: #ffffff;
-  line-height: 150%;
-  font-size: 1.5rem;
+  line-height: 120%;
+  font-size: 2.308rem;
   font-weight: normal;
 }
 
+.socialmediaicons{
+  display: flex;
+  margin-top: 5rem;
+  padding-left: 0;
+
+}
+.socialmediaicons  img{
+  height: 4.3rem;
+  width: 4.3rem;
+  margin-right: 1rem;
+}
 
 
 
@@ -333,14 +455,27 @@ section {
 }
 
 .footer .footer-links  h4{
-  font-size: 1.7rem;
+  font-size: 2.32rem;
   color: #ffffff;
-  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 120%;
+  font-weight: 500;
   position: relative;
   padding-bottom: 12px;
-  letter-spacing: 1.2px;
+  
   
 }
+
+.footer .footer-links  ul li a{
+  font-size: 2.32rem;
+  color: #ffffff;
+  letter-spacing: 0px;
+  line-height: 120%;
+  font-weight: 400;
+
+  
+}
+
 
 .footer .footer-links ul li {
   padding: 5px 0;
@@ -353,49 +488,166 @@ section {
 }
 .postfooter{
   background: var(--background-color);
-  font-size: 1.5rem;
+}
+.postfooter p{
+  font-size: 2.32rem;
+  line-height: 120%;
+  font-weight: 400;
   padding: 30px 0;
   color: #fff;
 }
 
 
-/* ----------------------------responsive website layout start 
- ---------------------------*/
 
-@media (max-width: 1620px) {
- 
+#imagecarousel{
+  background: var(--secondary-color);
+}
+.banner_banks .owl-item{
+  background: #FFF;
+  border: 1px solid var(--primry-color);
+  border-radius: 1px;
+  width: 26.537rem!important;
+  height: 12.261rem;
+}
+.banner_banks .owl-stage{
+  display: flex;
+  justify-content: center;
+}
+.banner_banks .item{
+  padding: 2.5rem 4rem;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  height: 100%;
+  height: 100%;
+}
+.item1 img{
+  width: 15.288rem!important;
+  height: 5.288rem;
+}
+.item2 img{
+  width: 21.714rem!important;
+  height: 5.143rem;
+}
+.item3 img{
+  width: 22.019rem!important;
+  height: 4.615rem;
+}
+.item4 img{
+  width: 23.269rem!important;
+  height: 3.846rem;
+}
+.item5 img{
+  width: 21.058rem!important;
+  height: 7.5rem;
 }
 
-/* laptop devices  */
-@media (max-width: 1280px) {
- 
+
+
+
+
+
+
+
+
+/* ----------------------------responsive website layout start  ---------------------------*/
+
+
+
+ /* Small screens, such as smartphones / */
+@media (max-width: 767px) {
+
   html {
-    font-size: 50%;
-  }
-
-
-}
-
-/* tablet mode css style   */
-@media (max-width: 980px) {
-
-
-
-}
-
-/* mobile devices */
-@media (max-width: 770px) {
-  html {
-    font-size: 40%;
+    font-size: 45%;
   }
   .owl-carousel .owl-dots {
     display: none;
   }
   .card{
     width: 100%;
+    border: none;
   }
   #section8 .owl-carousel .item .card-img-top {
     height: 45rem;
     object-fit: cover;
+  }
+  
+  .owl-carousel .owl-nav button.owl-prev {
+  display: none;
+  }
+  .owl-carousel .owl-nav button.owl-next {
+    display: none;
+  }
+  #section2 .owl-carousel .item{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .two .owl-item{
+    margin-right: 30px!important;
+  }
+  .second .owl-item {
+    margin: 0px 3.1rem;
+  }
+  .four .owl-item {
+    margin: 0px 3.1rem;
+  }
+}
+
+ /* Tablets in portrait mode / */
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+  html {
+    font-size: 50%;
+  }
+
+}
+/* / Tablets in landscape mode and small desktops / */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  html {
+    font-size: 50%;
+  }
+
+}
+/* / Standard desktops and laptops / */
+@media (min-width: 1280px) and (max-width: 1919px) {
+  
+html {
+  font-size: 55%;
+  scroll-behavior: smooth;
+}
+
+  /* #section2 .over-heading{
+    font-size: 4.5rem;
+    letter-spacing: 0px;
+    font-weight: 700;
+    line-height: 120%;
+  } */
+
+  .two .owl-item{
+    margin-right: 33px!important;
+  }
+  .second .owl-item {
+    margin: 0px 3.1rem;
+  }
+  .four .owl-item {
+    margin: 0px 3.1rem;
+  }
+
+
+}
+/* / Large screens and high-resolution displays / */
+@media (min-width: 1920px) {
+    .container {
+      max-width: 1595px; /* Adjust the desired width based on your design needs */
+    }
+    #section2 .owl-carousel .item {
+    height: 28.6rem; 
+    width: 21rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primry-color);
+    /* margin-right: 1rem; */
   }
 }

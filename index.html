@@ -12,6 +12,13 @@
       referrerpolicy="no-referrer"
     />
     <title>Parker</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons//favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,49 +27,46 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
 
 
-
-
+    
 
     
-    <section id="slider1" style="padding: 0;">
-      <div>
-        <div class="owl-carousel first-1 owl-theme">
-          <div class="item">
-              <img src="images/06_Entrace Plaza 01.jpg" alt="carousel" class="">
-                
-          </div>
-          <div class="item">
-            <img src="images/WLR club house with Pool.JPG" alt="">
-            
-          </div>
-          <div class="item">
-              <img src="images/12_Block E Garden Top View.jpg" alt="carousel" class="">
-            
-          </div>
-      </div>
+
+    <!-- Header -->
+
+    
+    <div class="header">
+      <!-- <nav style="height: 130px;"></nav> -->
+      <video id="moodvideo" autoplay loop muted>
+        <source src="./images/headerVideo.mp4" type='video/mp4'>
+        <img id="alternative" src="" />
+      </video>
     </div>
-    </section>
+   
+    
+
+   
 
     <section id="section2">
       <p class="section-heading"> PARKER REALTY: REAL ESTATE DEVELOPER IN INDIA <br>
         ABOUT TATA REALTY </p>
-      <img src="./images/border.png" class="borderimg" alt="border">
-      <p class="second-heading"> Providing quality life spaces through continuous innovation </p>
-      <p class="text-center">Parker Realty is one of the fastest growing real estate companies in India today.<br>
+      <img src="./images/border.png" class="borderimg" alt="border" style="width: 318px; height: 15px;">
+      <p class="second-heading mt-5"> Providing quality life spaces through continuous innovation </p>
+      <p class="text-center mt-5">Parker Realty is one of the fastest growing real estate companies in India today.<br>
         Its primary business is development of residential, commercial and retail properties.</p>
-        <div class="container p-3 mt-4">
-            <div class="owl-carousel two owl-theme">
+        <div class="container p-3 mt-5">
+            <div class="owl-carousel two owl-theme p-2">
                 <div class="item ">
-                  <div class="card firstcard "  >
-                      <div class="card-body mt-3 p-4 ">
+                  <div class="card"  >
+                      <div class="card-body mt-3 p-4 card-content">
                         <p class="over">OVER</p>
-                        <p class="section-heading" style="text-align: left;"> 110+ </p>
-                        <p class="section7p"> AWARDS WON </p>
+                        <p class="over-heading" style="text-align: left;"> 110+ </p>
+                        <p class="over"> AWARDS WON </p>
+                        <div class="imgdiv" ><img src="images/icons/awards.png" alt="awards" style="height: 60px; width: 60px;"></div>
                     </div>
                     </div>                   
                 </div>
@@ -70,9 +74,10 @@
                     <div class="card"  >
                       <div class="card-body mt-3 p-4 ">
                         <p class="over">OVER</p>
-                        <p class="section-heading" style="text-align: left;"> 28+ </p>
-                        <p class="section7p"> YEARS OF BUILDING
+                        <p class="over-heading" style="text-align: left;"> 28+ </p>
+                        <p class="over"> YEARS OF BUILDING
                           TRUST </p>
+                        <div class="imgdiv"><img src="images/icons/tower.png" alt="awards" style="height: 67px; width: 47px;"></div>
                       </div>
                     </div> 
                   
@@ -81,8 +86,9 @@
                   <div class="card"  >
                       <div class="card-body mt-3 p-4 ">
                         <p class="over">PROJECTS</p>
-                        <p class="section-heading" style="text-align: left;"> 10+ </p>
-                        <p class="section7p"> DELIVERED </p>
+                        <p class="over-heading" style="text-align: left;"> 10+ </p>
+                        <p class="over"> DELIVERED </p>
+                        <div class="imgdiv"><img src="images/icons/buildings.png" alt="awards" style="height: 60px; width: 60px;"></div>
                     </div>
                     </div> 
                   
@@ -91,8 +97,9 @@
                   <div class="card"  >
                       <div class="card-body mt-3 p-4 ">
                         <p class="over">MORE THAN</p>
-                        <p class="section-heading" style="text-align: left;"> 30,000+ </p>
-                        <p class="section7p"> HAPPY CUSTOMERS </p>
+                        <p class="over-heading" style="text-align: left;"> 30,000+ </p>
+                        <p class="over"> HAPPY CUSTOMERS </p>
+                        <div class="imgdiv" ><img src="images/icons/users.png" alt="awards" style="height: 60px; width: 60px;"></div>
                     </div>
                     </div> 
                   
@@ -101,10 +108,11 @@
                   <div class="card"  >
                       <div class="card-body mt-3 p-4 ">
                         <p class="over">OVER</p>
-                        <p class="section-heading" style="text-align: left;"> 3.5 </p>
-                        <p class="section7p"> MILLION SQ.M <br>
+                        <p class="over-heading" style="text-align: left;"> 3.5 </p>
+                        <p class="over"> MILLION SQ.M <br>
                           UNDER <br>
                           DEVELOPMENT </p>
+                        <div class="imgdiv"><img src="images/icons/buildings.png" alt="awards" style="height: 60px; width: 60px;"></div>
                     </div>
                     </div> 
                   
@@ -113,9 +121,10 @@
                   <div class="card"  >
                       <div class="card-body mt-3 p-4 ">
                         <p class="over">EMPLOYEES</p>
-                        <p class="section-heading" style="text-align: left;"> 462 </p>
-                        <p class="section7p"> IN REAL ESTATE <br>
+                        <p class="over-heading" style="text-align: left;"> 462 </p>
+                        <p class="over"> IN REAL ESTATE <br>
                           DIVISION </p>
+                        <div class="imgdiv"><img src="images/icons/hotel.png" alt="awards" style="height: 65px; width: 55px;"></div>
                     </div>
                     </div> 
                   
@@ -124,8 +133,9 @@
                   <div class="card"  >
                       <div class="card-body mt-3 p-4 ">
                         <p class="over">OVER</p>
-                        <p class="section-heading" style="text-align: left;"> 30,000+ </p>
-                        <p class="section7p"> UNIT DELIVERED </p>
+                        <p class="over-heading" style="text-align: left;"> 30,000+ </p>
+                        <p class="over"> UNIT DELIVERED </p>
+                        <div class="imgdiv"><img src="images/icons/buildings.png" alt="awards" style="height: 60px; width: 60px;"></div>
                     </div>
                     </div> 
                   
@@ -134,9 +144,10 @@
                   <div class="card"  >
                       <div class="card-body mt-3 p-4 ">
                         <p class="over">OVER</p>
-                        <p class="section-heading" style="text-align: left;"> 18,000 </p>
-                        <p class="section7p"> DELIVERED HOME IN <br>
+                        <p class="over-heading" style="text-align: left;"> 18,000 </p>
+                        <p class="over"> DELIVERED HOME IN <br>
                           THE LAST 6 YEASD </p>
+                        <div class="imgdiv"><img src="images/icons/buildings.png" alt="awards" style="height: 60px; width: 60px;"></div>
                     </div>
                     </div> 
                   
@@ -145,9 +156,10 @@
                   <div class="card"  >
                       <div class="card-body mt-3 p-4 ">
                         <p class="over">OVER</p>
-                        <p class="section-heading" style="text-align: left;"> 1000+ </p>
-                        <p class="section7p"> ASSOCIATION WITH <br>
+                        <p class="over-heading" style="text-align: left;"> 1000+ </p>
+                        <p class="over"> ASSOCIATION WITH <br>
                           CHANNEL PARTNERS</p>
+                        <div class="imgdiv"><img src="images/icons/partners.png" alt="awards" style="height: 60px; width: 60px;"></div>
                     </div>
                     </div> 
                   
@@ -155,7 +167,7 @@
                 
           </div> 
           <div class="d-flex justify-content-center mt-5">
-              <button class="ms-3 button2">Read More <i class="ms-2 fa fa-solid fa-arrow-right"></i></button>
+              <button class="ms button2">Read More <img src="images/icons/arrow.png" alt="" style="width:23.7px;height:15px; margin-left: .9rem;"></button>
           </div>
         </div>
     </section>
@@ -164,11 +176,11 @@
 
     <section id="section3" class="bg-img">
       <p class="section-heading"> FEATURED RESIDENTIAL PROJECTS </p>
-      <img src="./images/border.png" class="borderimg" alt="border">
-      <p class="second-heading"> FEATURED RESIDENTIAL PROJECTS </p>
+      <img src="./images/border.png" class="borderimg" alt="border" style="width: 320px; height: 14.9px;">
+      <p class="second-heading"> We build value. We build you. </p>
       <p class="text-center">With our projects spanning over the spheres of residential, commercial and corporate construction,<br>
         we, at Tata Realty, aim to deliver excellence and comfort, with a touch of fairness and transparency.</p>
-      <p class="section-heading mt-3"> ONGOING PROJECTS </p>
+      <p class="section-heading mt-5" style="font-weight: 400;"> ONGOING PROJECTS </p>
 
     </section>
 
@@ -204,7 +216,7 @@
                  <div class="card"  >
                      <img class="card-img-top" src="images/12_Block E Garden Top View.jpg" alt="Card image cap">
                      <div class="card-body mt-3">
-                       <div class="d-flex justify-content-between">
+                       <div class="d-flex justify-content-between align-items-center p-3">
                           <h5>White Lily Residency</h5>
                          <span class="highlight">PROFESSION SOON</span>
                        </div>
@@ -221,7 +233,7 @@
                   <div class="card"  >
                      <img class="card-img-top" src="images/WHITE LILY ELVATION OPEN FILE.jpg" alt="Card image cap">
                      <div class="card-body mt-3">
-                      <div class="d-flex justify-content-between">
+                      <div class="d-flex justify-content-between align-items-center p-3">
                          <h5>White Lily </h5>
                         <span class="highlight">READY TO MOVE IN</span>
                       </div>
@@ -239,7 +251,7 @@
                  <div class="card"  >
                      <img class="card-img-top" src="images/residency A.jpg" alt="Card image cap">
                      <div class="card-body mt-3">
-                      <div class="d-flex justify-content-between">
+                      <div class="d-flex justify-content-between align-items-center p-3">
                          <h5>Parker Residency</h5>
                         <span class="highlight">DELIVEREDS</span>
                       </div>
@@ -257,7 +269,7 @@
                  <div class="card"  >
                      <img class="card-img-top" src="images/20110115_Parker_Mall_view_01.JPG" alt="Card image cap">
                      <div class="card-body mt-3">
-                      <div class="d-flex justify-content-between">
+                      <div class="d-flex justify-content-between align-items-center p-3">
                          <h5>Parker City Centre</h5>
                         <span class="highlight">READY TO MOVE-IN</span>
                       </div>
@@ -275,7 +287,7 @@
                  <div class="card"  >
                      <img class="card-img-top" src="images/Parkar_Hotel_01 .jpg" alt="Card image cap">
                      <div class="card-body mt-3">
-                      <div class="d-flex justify-content-between">
+                      <div class="d-flex justify-content-between align-items-center p-3">
                          <h5>The Parker Suites</h5>
                          <span class="highlight">READY TO MOVE-IN</span>
                       </div>
@@ -296,25 +308,52 @@
     
     <section id="section6">
         <p class="section-heading" style="color: #ffffff;"> THE TALK </p>
-        <img src="./images/border.png" class="borderimg" alt="border">
-        <p class="second-heading"> The world of Parker Realty </p>
-        <p class="text-center" style="color: #ffffff;">From our delighted customers, to our MD Manish Garg,<br>
+        <img src="./images/border.png" class="borderimg mt-5" alt="border" style="width: 318px;">
+        <p class="second-heading mt-4"> The world of Parker Realty </p>
+        <p class="text-center mt-4" style="color: #ffffff;">From our delighted customers, to our MD Manish Garg,<br>
           we, the world is talking about us. Read on to find out what they have to say for us.</p>
-        <p class="section-heading mt-3"> ONGOING PROJECTS </p>
     </section>
 
 
+    <section id="imagecarousel">
+      <div class="container">
+        <p class="section-heading"> APPROVED BY </p>
+      <img src="./images/border.png" class="borderimg" alt="border" style="width: 320px; height: 14.9px;">
+      <p class="second-heading"> Project Approved By </p>
+      <p class="text-center">With our projects spanning over the spheres of residential, commercial and corporate construction,<br>
+        we, at Tata Realty, aim to deliver excellence and comfort, with a touch of fairness and transparency</p>
+
+        <div class="owl-carousel banner_banks owl-theme mt-5">
+            <div class="item item1">
+                  <img src="images/icons/SBI.png" alt="" class="">              
+            </div>
+            <div class="item item2">
+              <img src="images/icons/axis.png" alt="" class=""> 
+            </div>
+            <div class="item item3">
+              <img src="images/icons/union.png" alt="" class="">       
+            </div>
+            <div class="item item4">
+              <img src="images/icons/idfc.png" alt="" class="">       
+            </div>
+            <div class="item item5">
+              <img src="images/icons/uco.png" alt="" class="">       
+            </div>
+        </div> 
+      </div>
+    </section>
+
     <section id="section7" class="bg-img">
-      <p class="section-heading"> FEATURED RESIDENTIAL PROJECTS </p>
-      <p class="text-center" style="font-size: 1.5rem; font-weight: 600;">Here's what our residents have to say about their dream home!</p>
+      <p class="section-heading2"> OUR CUSTOMERS TESTIMONIAL </p>
+      <p class="text-center" >Here's what our residents have to say about their dream home!</p>
       <div class="container p-3 mt-4">
         <div class="owl-carousel third owl-theme">
             <div class="item">
                <div class="card"  >
-                   <img class="card-img-top" src="images/Asset-1.png" alt="Card image cap">
-                   <div class="card-body mt-3">
-                    <p class="section-heading" style="text-align: left;"> THE CUSTOMER TESTIMONIAL </p>
-                    <p class="section7p"> Here's what our residents have to say about their
+                   <img class="card-img-top" src="images/Asset-1.png" alt="Card image cap" >
+                   <div class="card-body mt-3"style="padding:0">
+                    <p class="section-heading2" style="text-align: left; font-size: 3.2rem;"> THE CUSTOMER <br> TESTIMONIAL </p>
+                    <p class=""> Here's what our residents have to say about their
                       dream home! </p>
                 </div>
                  </div>                   
@@ -323,8 +362,8 @@
                 <div class="card"  >
                    <img class="card-img-top" src="images/Asset-4.png" alt="Card image cap">
                    <div class="card-body mt-3">
-                      <p class="section-heading" style="text-align: left;"> THE CUSTOMER TESTIMONIAL </p>
-                      <p class="section7p"> Here's what our residents have to say about their
+                      <p class="section-heading2" style="text-align: left; font-size: 3.2rem;"> THE CUSTOMER <br>TESTIMONIAL </p>
+                      <p class=""> Here's what our residents have to say about their
                         dream home! </p>
                   </div>
                  </div> 
@@ -334,8 +373,8 @@
                <div class="card"  >
                    <img class="card-img-top" src="images/Asset-5.png" alt="Card image cap">
                    <div class="card-body mt-3">
-                    <p class="section-heading" style="text-align: left;"> THE CUSTOMER TESTIMONIAL </p>
-                    <p class="section7p"> Here's what our residents have to say about their
+                    <p class="section-heading2" style="text-align: left;font-size: 3.2rem;"> THE CUSTOMER <br>TESTIMONIAL </p>
+                    <p class=""> Here's what our residents have to say about their
                       dream home! </p>
                 </div>
                  </div> 
@@ -343,64 +382,65 @@
             </div>
       </div> 
        <div class="d-flex justify-content-center mt-4">
-          <button class="ms-3 button2">VIEW ALL <i class="fas fa-play-circle"></i></button>
+          <button class="mt-5 button2">VIEW ALL <img src="images/icons/videoplay.png" alt="paybutton" style="width:2.9rem;height:2.9rem; margin-left: .9rem;"></button>
         </div>
     </section>
 
 
 
     <section id="section8" class="">
-      <p class="section-heading"> OUR NEWS </p>
-      <p class="text-center" style="font-size: 1.5rem; font-weight: 600;">Here's what our residents have to say about their dream home!</p>
+      <p class="section-heading2"> OUR NEWS </p>
+      <p class="text-center" >Here's what our residents have to say about their dream home!</p>
       <div class="container p-3 mt-4">
         <div class="owl-carousel four owl-theme">
             <div class="item">
               <div class="card"  >
-                  <img class="card-img-top" src="images/TIO 1 copy.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="images/Layer 19.png" alt="Card image cap">
                   <div class="card-body mt-3">
-                    <p class="section-heading" style="text-align: left;"> THE CUSTOMER TESTIMONIAL </p>
-                    <p class="section7p"> Here's what our residents have to say about their
+                    <p class="section-heading2" style="text-align: left; font-size: 3.2rem;"> THE CUSTOMER <br>TESTIMONIAL </p>
+                    <p class=""> Here's what our residents have to say about their
                       dream home! </p>
                 </div>
                 </div>                   
             </div>
             <div class="item">
                 <div class="card"  >
-                  <img class="card-img-top" src="images/WhatsApp Image 2021-02-01 at 3.30.32 PM.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="images/Layer 20.png" alt="Card image cap">
                   <div class="card-body mt-3">
-                      <p class="section-heading" style="text-align: left;"> THE CUSTOMER TESTIMONIAL </p>
-                      <p class="section7p"> Here's what our residents have to say about their
-                        dream home! </p>
+                    <p class="section-heading2" style="text-align: left; font-size: 3.2rem;"> THE CUSTOMER <br>TESTIMONIAL </p>
+                    <p class=""> Here's what our residents have to say about their
+                      dream home! </p>
                   </div>
                 </div> 
               
             </div>
             <div class="item">
               <div class="card"  >
-                  <img class="card-img-top" src="images/DB1 copy.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="images/Layer 21.png" alt="Card image cap">
                   <div class="card-body mt-3">
-                    <p class="section-heading" style="text-align: left;"> THE CUSTOMER TESTIMONIAL </p>
-                    <p class="section7p"> Here's what our residents have to say about their
+                    <p class="section-heading2" style="text-align: left; font-size: 3.2rem;"> THE CUSTOMER <br>TESTIMONIAL </p>
+                    <p class=""> Here's what our residents have to say about their
                       dream home! </p>
                 </div>
                 </div> 
               
             </div>
       </div> 
-      <div class="d-flex justify-content-center mt-4">
-          <button class="ms-3 button2">VIEW ALL <i class="me-2 fas fa-comment-alt"></i></button>
+      <div class="d-flex justify-content-center mt-5">
+          <button class="ms-3 button2">VIEW ALL <img src="images/icons/news.png" alt="news" style="width:2.9rem;height:2.5rem; margin-left: .9rem;"></button>
         </div>
     </section>
 
 
     <section id="section9">
       <p class="section-heading" style="color: #ffffff;"> CONTACT US </p>
-      <img src="./images/border.png" class="borderimg" alt="border">
+      <img src="./images/border.png" class="borderimg" alt="border"  style="width: 215px;">
 
       <div class="container">
         <div class="row mt-5 align-items-center">
-          <div class="col-md-6">
-            <div class="contactdetails p-4">
+          <div class="col-md-7 p-3">
+            <img src="images/icons/logo.png" alt="" class="">
+            <div class="contactdetails  mt-5">
               <h4>OFFICE ADDRESS</h4>
               <p>Parker Mall, Sector-62, GT Road, NH-1, Kundli, Sonepat, Haryana-131028</p>
               <h4 class="mt-5">REGISTERED OFFICE</h4>
@@ -410,9 +450,15 @@
               <p class="mt-5">Ph. No: 0130-4091004, 4091005</p>
               <p class="mt-5">E-mail: theparkergroup@yahoo.com, info.theparkergroup@gmail.com</p>
             </div>
-
+              <ul class="socialmediaicons">
+                <li><a href=""><img src="images/icons/facebook.png" alt=""></a></li>
+                <li><a href=""><img src="images/icons/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="images/icons/youtube.png" alt=""></a></li>
+                <li><a href=""><img src="images/icons/linkedin.png" alt=""></a></li>
+                <li><a href=""><img src="images/icons/twitter.png" alt=""></a></li>
+              </ul>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="formdiv p-5" style="background-color: #ffffff;">
                   <form action="">
                     <div class="mb-3">
@@ -436,7 +482,7 @@
                       <textarea class="form-control form-control-lg" id="comment" rows="3"></textarea>
                     </div>
                     <div class="mb-3">
-                      <input type="submit" class="form-control form-control-lg button1" id="submit" placeholder="submit">
+                      <input type="submit" class="form-control form-control-lg button1" id="submit" placeholder="submit" style="width: 100%;">
                     </div>
                   </form>
             </div>
@@ -490,9 +536,9 @@
             <h4 class="">MEDIA</h4>
             <ul>
               <li><a href="">In the News</a></li>
-              <li>Press Realese</li>
-              <li>Blog</li>
-              <li>Gallery</li>
+              <li><a href="">Press Realese</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Gallery</a></li>
             </ul>
           </div>
           <div class="col-lg-2 col-12 footer-links p-4">
@@ -506,22 +552,23 @@
       </div>
 
     </footer>
-    <div class="postfooter p-4"><div class="container">All Rights Reserved &copy;  Company 2023</div></div>
+
+    <div class="postfooter p-1"><div class="container"><p>All Rights Reserved &copy;  Company 2023</p></div></div>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" 
     referrerpolicy="no-referrer"></script>
-
+    <script src="./js/script.js"></script>
     <script>
         $('.first').owlCarousel({
-              loop:true,
+              // loop:true,
               // margin:10,
               nav:true,
               navText :false,
               dots:true,
               autoplay:true,
-              autoplayTimeout: 2000,
+              autoplayTimeout: 200000,
               responsive:{
                   0:{
                       items:1
@@ -535,8 +582,8 @@
               }
           });
             $('.second').owlCarousel({
-                loop:true,
-                margin:10,
+                // loop:true,
+                // margin:10,
                 nav: true,
                 navText: [
                   '<i class="fa fa-solid fa-arrow-left"></i>',
@@ -557,7 +604,7 @@
                 }
             })
             $('.third').owlCarousel({
-                loop:true,
+                // loop:true,
                 margin:10,
                 nav: true,
                 navText: [
@@ -579,8 +626,8 @@
                 }
             })
             $('.four').owlCarousel({
-                loop:true,
-                margin:10,
+                // loop:true,
+                // margin:10,
                 nav: true,
                 navText: [
                   '<i class="fa fa-solid fa-arrow-left"></i>',
@@ -600,33 +647,14 @@
                     }
                 }
             })
-            $('.first-1').owlCarousel({
-              loop:true,
-              // margin:10,
-              nav:true,
-              navText :false,
-              dots:true,
-              autoplay:true,
-              autoplayTimeout: 2000,
-              responsive:{
-                  0:{
-                      items:1
-                  },
-                  600:{
-                      items:1
-                  },
-                  1000:{
-                      items:1
-                  }
-              }
-          });
+           
           $('.two').owlCarousel({
-                loop:true,
-                margin:10,
+                // loop:false,
+                margin:46,
                 nav: true,
                 navText: [
-                  '<i class="fa fa-angle-left"></i>',
-                  '<i class="fa fa-angle-right"></i>'
+                  '<img src="images/icons/leftangel.png" alt="Previous" style="width:2rem;height:3.8rem">',
+                  '<img src="images/icons/rightangel.png" alt="Previous" style="width:2rem;height:3.8rem">',
                 ],
                 dots:false,
                 autoplay:true,
@@ -642,6 +670,30 @@
                     }
                 }
             })
+            $('.banner_banks').owlCarousel({
+                // loop:true,
+                margin:20,
+                nav: true,
+                navText: [
+                '<i class="fa fa-solid fa-arrow-left"></i>',
+                  '<i class="fa fa-solid fa-arrow-right"></i>'
+                ],
+                dots:false,
+                autoplay:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+            
+            
     </script>
   </body>
 </html>
