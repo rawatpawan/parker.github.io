@@ -148,27 +148,27 @@ section {
 
 
 
-.navbar {
+ .navbar {
   height: 12.4rem;
   background: #ffffff;
   
 }
-.navbarDropdown{
+.desktopMenu .navbarDropdown{
   height: 12.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.nav-item{
+.desktopMenu .nav-item{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.websiteLogo{
+ .websiteLogo{
   height: 8.654rem;
   width: 18.558rem;
 }
-.navbar-nav .nav-link {
+.desktopMenu .navbar-nav .nav-link {
  
   font-size: 1.924rem;
   line-height: 2.308rem;
@@ -180,34 +180,34 @@ section {
   text-transform: uppercase;
 }
 
-.phoneIcon{
+.desktopMenu .phoneIcon{
   height: 2.885rem;
   width: 2.885rem;
   margin-right: 1.2rem;
 }
-.searchIcon{
+.desktopMenu .searchIcon{
   height: 3.365rem;
   width: 3.365rem;
   margin-right: 0;
 
   
 }
-.hamburderIcon{
+.desktopMenu .hamburderIcon{
   width: 3.077rem;
   height: 2.404rem;
   margin-right: 0;
 
   
 }
-.fristtree{
+.desktopMenu .fristtree{
   background-color: var(--background-color);
   
 }
-.secondtree{
+.desktopMenu .secondtree{
   background: #E6E7E8
 }
 
-.fristtree .dropdown-item{
+.desktopMenu .fristtree .dropdown-item{
   color: #ffffff;
   font-weight: 700;
   font-size: 1.923rem;
@@ -215,41 +215,40 @@ section {
   letter-spacing: 0px;
   text-align: center;
 }
-.secondtree .dropdown-item{
+.desktopMenu .secondtree .dropdown-item{
   color: var(--background-color);
 }
-.fristtree .dropdown-item:hover{
+.desktopMenu .fristtree .dropdown-item:hover{
   color: var(--primary-button-background);
   background: transparent;
-}
-.nav-link:hover{
-  color: var(--primary-button-background);
-  background: transparent;
-}
-.secondtreesecondary:hover >{
-  columns: red;
 }
 
-.fristtree li{
+.desktopMenu .nav-link:hover{
+  color: var(--primary-button-background);
+  background: transparent;
+}
+
+
+.desktopMenu .fristtree li{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 34.615rem;
-  height: 7.212rem;
- 
-  
+  height: 7.212rem;  
 }
-.fristtree li:not(:first-child) {
+
+.desktopMenu .fristtree li:not(:first-child) {
   border-left: 0.1px solid white;
 }
-.secondtree li:not(:last-child) {
+
+.desktopMenu .secondtree li:not(:last-child) {
   border-bottom: 0.1px solid black;
 }
-.navbar .navbar-nav .nav-link:hover{
+.desktopMenu .navbar .navbar-nav .nav-link:hover{
   color: var(--primary-button-background);
 }
 
-.secondtreesecondary:before {
+.desktopMenu .secondtreesecondary:before {
   content: '';
   position: absolute;
   top: -20%;
@@ -257,7 +256,7 @@ section {
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
 }
-.secondarrow:before {
+.desktopMenu .secondarrow:before {
   content: '';
   position: absolute;
   top: -10%;
@@ -266,7 +265,7 @@ section {
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
 }
-.threearrow:before {
+.desktopMenu .threearrow:before {
   content: '';
   position: absolute;
   top: -10%;
@@ -275,7 +274,7 @@ section {
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
 }
-.fourarrow:before {
+.desktopMenu .fourarrow:before {
   content: '';
   position: absolute;
   top: -10%;
@@ -284,6 +283,7 @@ section {
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
 }
+
   @media only screen and (min-width: 960px) {
   .firstMenu:hover .fristtree {
     display: block;
@@ -313,11 +313,41 @@ section {
   
 }
 
+/* mobile menu */
+.mobileMenu .collapse {
+  padding: 2rem;
+  
+}
+.mobileMenu .navbar-nav .nav-link {
+ 
+  font-size: 1.924rem;
+  line-height: 2.308rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0px;
+  margin: 2rem;  
+  text-transform: uppercase;
+}
+#navbarDropdownresidentials{
+  color: #000000;
+  padding: 1.8px 7.2px;
 
 
-/* .navbar ul li{
-
-} */
+}
+.mobileMenu .dropdown-menu .dropdown-item {
+ 
+  font-size: 1.924rem;
+  line-height: 2.308rem;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0px;
+  margin: 2rem;  
+  text-transform: uppercase;
+}
+.mobileMenu .dropdown-menu{
+  background: #f1f2f2;
+  border-radius: 0;
+}
 
 /* navigation bar end  */
 
@@ -336,7 +366,13 @@ section {
 .two .owl-item, .two .item{
   width: 21.346rem!important;
   height: 28.75rem;
+ 
+
 }
+.two .owl-item{
+  margin-right: 1.24rem;
+}
+
 
 
 
@@ -411,13 +447,13 @@ section {
   background: url(../images/parkreality.jpg);
 }
 #section2 .owl-carousel .item {
-  margin-right: 1rem;
-  height: 27.6rem; 
+  /* margin-right: 1rem;
+  height: 27.6rem;  */
   /* width: auto; */
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--primary-button-background);
   
 }
 #section2 .card:hover{
@@ -481,29 +517,24 @@ section {
   height: auto;
 }
 
-#section5 .card-body h5{
+#section5 h5{
   color: var(--background-color);
   font-weight: 600;
   font-size: 1.635rem;
 }
-#section5 .card-body strong{
+#section5 strong{
   color: var(--background-color);
   font-weight: 600;
   font-size: 1.635rem;
 }
-#section5 .card-body p{
+#section5 p{
   margin-top: 1rem;
   color: var(--background-color);
   font-weight: 400;
   font-size: 1.635rem;
 }
 
-#section5 .card-body .carddescription p{
 
-  color: var(--background-color);
-  font-weight: normal;
-  font-size: 1.5rem;
-}
 .highlight{
   color: var(--background-color);
   font-size: 1.436rem;
@@ -516,6 +547,30 @@ section {
     height: 32.981rem !important;
     object-fit: cover;
 }
+
+.residentialInner{
+  width: 43.077rem;
+  height: 68.846rem;
+  background: #ffffff;
+  box-shadow: 3px 0 7px 0 rgba(0, 0, 0, 0.35);
+  transition: all 0.5s linear;
+
+
+}
+  /* Add styles for hover effect */
+  .residentialInner:hover {
+
+    box-shadow: 6px 0 14px 0 rgba(0, 0, 0, 0.5);
+  
+    transform: translateY(-6px);
+  }
+.residentialInnerimg{
+  width: 43.077rem;
+  
+}
+
+
+
 
 #section6{
   background: url(../images/the_talk.jpg);
@@ -530,8 +585,18 @@ section {
   background-position: center center;
 }
 
+#section7  {
+  background-color: var(--secondary-color);
+  height: 77.5rem;
+}
+#section7 .tesimonial{
+  width: 44.712rem;  
 
-
+}
+#section7 .tesimonialCardImg{
+  height: 29.712rem;
+  width: 44.712rem;  
+}
 #section7 .owl-carousel .item {
   height: 45rem; /* Adjust the desired height for the item divs */
   display: flex;
@@ -539,47 +604,57 @@ section {
   align-items: center;
 }
 
+.third .owl-item{
+  width: 44.712rem !important;  
+
+}
+.third .owl-item {
+  margin: 0px 0.673rem;
+}
 .section7p{
   font-size: 1.5rem;
   font-weight: 600;
 
 }
 
-#section8{
-  background: var(--secondary-color);
-}
-#section8 .owl-carousel .item .card-img-top {
-  height: 32.981rem !important;
-  object-fit: cover;
-}
-
-.second .owl-item{
-  width: 43.07rem!important;
-  height: 64.712rem!important;
-  margin: 0 3.69rem;
-  margin-bottom: 5px;
-  box-shadow: 0 0px 1rem rgba(0,0,0,0.3);
-  background: #ffffff;
-
-}
 
 
-/************************section3 *******************/
+
+
+/************************section8 *******************/
 
 .bg-img{
   background: url(../images/background.jpg);
 }
 
+
+
 .third .item .card-img-top {
-  height: 29.595rem;
+  /* height: 29.595rem; */
   object-fit: cover;
-  width: 44.712rem;
+  /* width: 44.712rem; */
 }
 
 .four .owl-item {
-  width: 43.07rem!important;
-  margin: 0 3.69rem;
+  width: 43.077rem!important;
+  height: 64.904rem;
+  margin: auto 1.538rem;
+  margin-bottom: 1rem
 }
+.newsdiv{
+  background: #ffffff;
+  width: 43.077rem!important;
+  height: 64.904rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 0 7px 0 rgba(0, 0, 0, 0.35);
+
+}
+.newunder{
+  width: 38.365rem;
+}
+
 
 .formdiv label{
   font-size: 1.93rem;
@@ -589,6 +664,15 @@ section {
   margin-bottom: 1rem;
   font-weight: 400;
 }
+.readmore{
+  margin-top: 4rem;
+  width: 18.654rem;
+  height: 5.962rem;
+  background: transparent;
+  border: 2px solid var(--primary-button-background);
+}
+
+
 .formdiv input::placeholder {
   font-size: 1.93rem;
   line-height: 150%;
@@ -625,8 +709,22 @@ section {
   margin-right: 1rem;
 }
 
+.videoPanel{
+  padding: 0px 6.731rem;
+}
+.videosection{
+  background: #ffffff;
+  /* width: 122.115rem; */
+  height: 67.404rem;
+  box-shadow: 3px 0 7px 0 rgba(0, 0, 0, 0.35);
+  padding: 1rem;
 
-
+}
+.videosection video {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
 
 .footer {
     
@@ -685,12 +783,14 @@ section {
 #imagecarousel{
   background: var(--secondary-color);
 }
+
 .banner_banks .owl-item{
   background: #FFF;
   border: 1px solid var(--primry-color);
   border-radius: 1px;
   width: 26.537rem!important;
   height: 12.261rem;
+  margin: auto 0.962rem;
 }
 .banner_banks .owl-stage{
   display: flex;
@@ -777,11 +877,35 @@ section {
   .two .owl-item{
     margin-right: 30px!important;
   }
-  .second .owl-item {
+
+  /* .four .owl-item {
     margin: 0px 3.1rem;
+  } */
+  .desktopMenu {
+    display: none;
   }
-  .four .owl-item {
-    margin: 0px 3.1rem;
+  #slide-navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 80%;
+    height: 100%;
+    background-color: var(--background-color);
+    overflow: auto;
+  }
+  .menu-overlay {
+    display: none;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* IE7 & 8 */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 49;
   }
 }
 
@@ -791,14 +915,49 @@ section {
   html {
     font-size: 50%;
   }
+  .desktopMenu{
+    display: none;
+  }
+  #slide-navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 80%;
+    height: 100%;
+    background-color: var(--background-color);
+    overflow: auto;
+  }
+  .menu-overlay {
+    display: none;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* IE7 & 8 */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 49;
+  }
 
+  .third .owl-item{
+    margin: 0px 2.308rem;
+  }
+  .four .owl-item {
+    margin: auto 3.269rem;
+    margin-bottom: 1rem;
+  }
 }
 /* / Tablets in landscape mode and small desktops / */
 @media (min-width: 1024px) and (max-width: 1279px) {
   html {
     font-size: 50%;
   }
-
+  .mobileMenu{
+    display: none;
+  }
 }
 /* / Standard desktops and laptops / */
 @media (min-width: 1280px) and (max-width: 1919px) {
@@ -816,29 +975,53 @@ html {
   } */
 
   .two .owl-item{
-    margin-right: 33px!important;
+    margin-right: 27.8px!important;
   }
-  .second .owl-item {
-    margin: 0px 3.1rem;
+  .third .owl-item{
+    margin: 0px 1.923rem;
   }
   .four .owl-item {
-    margin: 0px 3.1rem;
+    margin: auto 2.692rem;
+    margin-bottom: 1rem;
   }
-
+  .mobileMenu{
+    display: none;
+  }
 
 }
 /* / Large screens and high-resolution displays / */
 @media (min-width: 1920px) {
     .container {
-      max-width: 1595px; /* Adjust the desired width based on your design needs */
+      max-width: 1440px; /* Adjust the desired width based on your design needs */
     }
     #section2 .owl-carousel .item {
-    height: 28.6rem; 
+    /* height: 28.6rem;  */
     width: 21rem; 
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--primry-color);
     /* margin-right: 1rem; */
+  }
+  .mobileMenu{
+    display: none;
+  }
+  .third{
+    width: 138.462rem;
+    display: flex;
+    justify-content: center;
+  }
+  .four{
+    width: 138.462rem;
+    display: flex;
+    justify-content: center;
+  }
+  .banner_banks {
+    width: 138.462rem;
+    display: flex;
+    justify-content: center;
+  }
+  .videoPanel .row{
+    width: 102%;
   }
 }

@@ -16,5 +16,45 @@
         $('.secondtreesecondary  .secondtree').attr("data-bs-popper", "")
 
     });
+
+
+
+    // When the residential button is clicked
+    $(".residentailButton").on("click", function() {
+        // Toggle classes
+        $(this).removeClass("button2").addClass("button1");
+        $(".commercialButton").removeClass("button1").addClass("button2");
+        
+  
+        // Show the residential content and hide the commercial content
+        $(".residentialRow").show();
+        $(".commercialRow").hide();
+      });
+  
+      // When the commercial button is clicked
+      $(".commercialButton").on("click", function() {
+        // Toggle classes
+        $(this).removeClass("button2").addClass("button1");
+        $(".residentailButton").removeClass("button1").addClass("button2");
+  
+        // Show the commercial content and hide the residential content
+        $(".residentialRow").hide();
+        $(".commercialRow").show();
+      });
+
+      
   });
 
+  $('[data-toggle="slide-collapse"]').on('click', function() {
+    $navMenuCont = $($(this).data('target'));
+    $navMenuCont.animate({
+      'width': 'toggle'
+    }, 350);
+    $(".menu-overlay").fadeIn(500);
+  
+  });
+  $(".menu-overlay").click(function(event) {
+    $(".navbar-toggler").trigger("click");
+    $(".menu-overlay").fadeOut(500);
+  });
+  
