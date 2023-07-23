@@ -38,8 +38,9 @@
 
     <!-- Header -->
 
+<div class="desktopMenu">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+    <div class="container" >
       <!-- Logo in the middle -->
       <a class="navbar-brand me-auto" href="#">
         <img src="images/icons/logo.png" alt="Logo" class="websiteLogo" height="">
@@ -47,8 +48,8 @@
 
       <!-- Hamburger icon for mobile -->
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border:none">
+        <img src="images/icons/hamburger.png" alt="" class="hamburderIcon">
       </button>
 
       <!-- Menu items on the left -->
@@ -57,42 +58,50 @@
           <li class="nav-item">
             <a class="nav-link active" href="#">Home</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Projects</a>
-            <ul class="dropdown-menu fristtree" aria-labelledby="projectsDropdown">
-              <li><a class="dropdown-item" href="#">Residential</a></li>
+          <li class="nav-item dropdown firstMenu">
+            <a class="nav-link dropdown-toggle navbarDropdown" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"">Projects</a>
+            <ul class="dropdown-menu fristtree fristarrow" aria-labelledby="projectsDropdown">
+              <li class="nav-item dropdown secondtreesecondary">
+                <a class="nav-link dropdown-toggle  navbarDropdown" href="#" id="ResidentialDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" style="color:white">Residential</a>
+                <ul class="dropdown-menu secondtree" aria-labelledby="ResidentialDropdown">
+                  <li><a class="dropdown-item" href="#">White Lily Residency</a></li>
+                  <li><a class="dropdown-item" href="#">White Lily</a></li>
+                  <li><a class="dropdown-item" href="#">Parker Residency</a></li>
+                </ul>
+              </li>
               <li><a class="dropdown-item" href="#">Commercial</a></li>
               <li><a class="dropdown-item" href="#">Plots</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="ourStoryDropdown" role="button" data-bs-toggle="dropdown"
+          <li class="nav-item dropdown firstMenu">
+            <a class="nav-link dropdown-toggle navbarDropdown" href="#" id="ourStoryDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">Our Story</a>
             <ul class="dropdown-menu fristtree" aria-labelledby="ourStoryDropdown">
               <li><a class="dropdown-item" href="#">About Us</a></li>
-              <li><a class="dropdown-item" href="#">Management</a></li>
+              <li><a class="dropdown-item secondarrow" href="#" >Management</a></li>
               <li><a class="dropdown-item" href="#">Why Parker</a></li>
               <li><a class="dropdown-item" href="#">Careers</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="customerSupportDropdown" role="button" data-bs-toggle="dropdown"
+          <li class="nav-item dropdown firstMenu">
+            <a class="nav-link dropdown-toggle navbarDropdown" href="#" id="customerSupportDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">Customer Support</a>
             <ul class="dropdown-menu fristtree" aria-labelledby="customerSupportDropdown">
               <li><a class="dropdown-item" href="#">Testimonials</a></li>
               <li><a class="dropdown-item" href="#">Feedback</a></li>
-              <li><a class="dropdown-item" href="#">Privacy</a></li>
+              <li><a class="dropdown-item threearrow" href="#">Privacy</a></li>
               <li><a class="dropdown-item" href="#">Contact Us</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="mediaDropdown" role="button" data-bs-toggle="dropdown"
+          <li class="nav-item dropdown firstMenu">
+            <a class="nav-link dropdown-toggle navbarDropdown" href="#" id="mediaDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">Media</a>
             <ul class="dropdown-menu fristtree" aria-labelledby="mediaDropdown">
               <li><a class="dropdown-item" href="#">In the News</a></li>
               <li><a class="dropdown-item" href="#">Press Release</a></li>
-              <li><a class="dropdown-item" href="#">Blog</a></li>
+              <li><a class="dropdown-item fourarrow" href="#">Blog</a></li>
               <li><a class="dropdown-item" href="#">Gallery</a></li>
             </ul>
           </li>
@@ -113,6 +122,7 @@
       </div>
     </div>
   </nav>
+</div>
 
 
     
@@ -310,7 +320,7 @@
                   <div class="card"  >
                      <img class="card-img-top" src="images/WHITE LILY ELVATION OPEN FILE.jpg" alt="Card image cap">
                      <div class="card-body mt-3">
-                      <div class="d-flex justify-content-between align-items-center p-3">
+                      <div class="d-flex justify-content-between align-items-center">
                          <h5>White Lily </h5>
                         <span class="highlight">READY TO MOVE IN</span>
                       </div>
@@ -328,7 +338,7 @@
                  <div class="card"  >
                      <img class="card-img-top" src="images/residency A.jpg" alt="Card image cap">
                      <div class="card-body mt-3">
-                      <div class="d-flex justify-content-between align-items-center p-3">
+                      <div class="d-flex justify-content-between align-items-center">
                          <h5>Parker Residency</h5>
                         <span class="highlight">DELIVEREDS</span>
                       </div>
@@ -346,7 +356,7 @@
                  <div class="card"  >
                      <img class="card-img-top" src="images/20110115_Parker_Mall_view_01.JPG" alt="Card image cap">
                      <div class="card-body mt-3">
-                      <div class="d-flex justify-content-between align-items-center p-3">
+                      <div class="d-flex justify-content-between align-items-center">
                          <h5>Parker City Centre</h5>
                         <span class="highlight">READY TO MOVE-IN</span>
                       </div>
@@ -364,7 +374,7 @@
                  <div class="card"  >
                      <img class="card-img-top" src="images/Parkar_Hotel_01 .jpg" alt="Card image cap">
                      <div class="card-body mt-3">
-                      <div class="d-flex justify-content-between align-items-center p-3">
+                      <div class="d-flex justify-content-between align-items-center">
                          <h5>The Parker Suites</h5>
                          <span class="highlight">READY TO MOVE-IN</span>
                       </div>
@@ -631,6 +641,8 @@
     </footer>
 
     <div class="postfooter p-1"><div class="container"><p>All Rights Reserved &copy;  Company 2023</p></div></div>
+    
+   <a href=""> <img src="images/icons/enquiry.png" alt="enquiry" class="enquirynowbtn"></a>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
