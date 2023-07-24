@@ -907,6 +907,9 @@ section {
     top: 0;
     z-index: 49;
   }
+  .videoPanel img{
+    width: 99%;
+  }
 }
 
  /* Tablets in portrait mode / */
@@ -951,16 +954,19 @@ section {
   }
 }
 /* / Tablets in landscape mode and small desktops / */
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1399px) {
   html {
     font-size: 50%;
   }
   .mobileMenu{
     display: none;
   }
+  .videoPanel img{
+    width: 99%;
+  }
 }
 /* / Standard desktops and laptops / */
-@media (min-width: 1280px) and (max-width: 1919px) {
+@media (min-width: 1400px) and (max-width: 1919px) {
   
 html {
   font-size: 55%;
@@ -986,6 +992,9 @@ html {
   }
   .mobileMenu{
     display: none;
+  }
+  .videoPanel img{
+    width: 99%;
   }
 
 }
