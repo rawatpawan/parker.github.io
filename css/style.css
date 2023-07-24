@@ -655,6 +655,10 @@ section {
   width: 38.365rem;
 }
 
+.formdiv{
+  height: 60.192rem;
+  width: 43.077rem;
+}
 
 .formdiv label{
   font-size: 1.93rem;
@@ -875,7 +879,7 @@ section {
   }
   
   .two .owl-item{
-    margin-right: 30px!important;
+    margin: auto 16px!important;
   }
 
   /* .four .owl-item {
@@ -910,6 +914,17 @@ section {
   .videoPanel img{
     width: 99%;
   }
+  .residentialInner{
+    margin-top: 2rem;
+  }
+  .third .owl-item {
+    margin: 0px 4rem;
+}
+.four .owl-item {
+
+  margin: auto 5rem;
+  margin-bottom: 1rem;
+}
 }
 
  /* Tablets in portrait mode / */
