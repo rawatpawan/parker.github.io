@@ -10,13 +10,24 @@ html {
   scroll-behavior: smooth;
  
 }
+@font-face {
+  font-family: 'TrajanPro Bold';
+  src: url('../fonts/TrajanPro-Bold.otf') format('opentype');
+  font-weight: bold;
+}
 
+@font-face {
+  font-family: 'TrajanPro Regular';
+  src: url('../fonts/TrajanPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
 body {
   --main-color: #00377b;
   --primry-color: #E5B250;
   --secondary-color: #F1F2F2;
   --primary-button-background: #E5B250;
   --background-color: #000000;
+  --white-lily-color:#5D042D;
 }
 
 h1,
@@ -94,6 +105,17 @@ section {
   bottom:1%;
   left:25%;
   right:25%;
+}
+
+#header .owl-dots{
+  position: absolute;
+  bottom:11%;
+  left:25%;
+  right:25%;
+}
+
+#header .owl-theme .owl-dots .owl-dot span{
+ background: #ffffff;
 }
 
 /*************Owl Carousel nav****************/
@@ -840,12 +862,263 @@ section {
 }
 
 
+/************************************************* Home Page End********************************************/
+
+
+/************************************************ White Lily Page Start *************************************/
+
+
+
+.scrolldown p{
+  font-weight: 700;
+}
+.rectangleDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0px;
+  
+}
+
+.rectangleDiv li{
+  height: 7.212rem;
+  width: 18.75rem;
+  padding: 4rem 1rem;
+}
+.rectangleDiv li:not(:last-child) {
+  border-left: 0.1px solid var(--primary-button-background);
+}
+
+.li7{
+  width: 25.962rem !important;
+  border-left: 0.1px solid var(--primary-button-background);
+
+} 
+
+.rectangle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-lily-color);
+  color: #fff;
+}
+.rectangle a{
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.9231rem;
+}
+.active-link {
+  background-color: var(--primary-button-background);
+}
+#overviewSection{
+  margin-top: 8rem;
+}
+#overviewSection h2{
+  font-family: 'TrajanPro Bold', sans-serif;
+  text-align: left;
+  color: var(--primary-button-background);
+  font-size: 3.812rem;
+  text-transform: uppercase;
+ 
+}
+#overviewSection p{
+  text-align: left;
+  font-size: 1.9231rem;
+  line-height: 3.375rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+#overviewSection .col{
+  padding: 0;
+}
+
+
+#amenitiesSection{
+  background: url(../images/whitelily/amenities.png);
+  height: 123.077rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.aminitesslider{
+  background: url(../images/whitelily/animitiebackground.png);
+}
+.aimidivcarousel{
+  padding: .5rem;
+  background: #ffffff;
+}
+
+.unitslayout .item img {
+  width: 86.7%;
+  height: auto;
+  margin: auto;
+}
+.hide-section {
+  display: none !important;
+}
+
+#locationSection{
+  background: url(../images/whitelily/locationbackground.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#locationSection .col{
+  padding: 0;
+}
+#locationSection .col p{
+  color: #ffffff;
+  font-size: 1.632rem;
+  line-height: 2.88rem;
+  font-weight: 500;
+}
+
+#locationSection .secrow{
+  background: #fffbde;
+  border: 2px solid var(--primry-color);
+  padding: 1rem;
+}
+#locationSection img{
+  height: 12.019rem;
+  width: 13.942rem;
+}
+.col .secrow p{
+  text-align: center;
+  font-size: 1.406rem !important;
+  line-height:  1.731rem !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+  color: #000000 !important;
+}
+#locationSection iframe{
+  height: 59.615rem;
+  width: 69.231rem;
+}
+
+#uppergallerySection{
+  background: url(../images/whitelily/uppergallerybackground.png);
+}
+.righcol {
+  justify-content: center;
+}
+.righcol .col-5{
+  background: var(--white-lily-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   padding: 4rem 2rem;
+   margin: 1rem;
+}
+#uppergallerySection .col-5 p{
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+#uppergallerySection .second-heading{
+  color: var(--white-lily-color);
+}
+#uppergallerySection iframe{
+  width: 63.462rem;
+  height: 46.154rem;
+}
+.youtubediv{
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0px
+}
+
+#gallerySection .aimidivcarousel {
+  box-shadow: 3px 0 7px 0 rgba(0, 0, 0, 0.35);
+ 
+}
+
+#specificationsSection{
+  background: url(../images/whitelily/specificationbackgroun.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.specificationul{
+  padding: 0rem;
+}
+.specificationul div{
+  border-left: 2px solid var(--primry-color);
+  padding: 1rem;
+
+
+}
+.specificationul .head{
+  color: var(--primary-button-background);
+  font-size: 2.404rem;
+  text-align: left;
+  line-height: 150%;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.specificationul .desc{
+  font-size: 1.923rem;
+  font-weight: 500;
+  line-height: 2.885rem;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+.specificationul .subdesc{
+  font-size: 1.923rem;
+  font-weight: 400;
+  line-height: 2.885rem;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.specificationbtn{
+  background: var(--primry-color);
+  color: var(--white-lily-color);
+  border-radius: 0px;
+  font-size: 2.404rem;
+  font-weight: 900;
+  line-height: 2.885rem;
+  padding: 2rem 3rem;
+  width: 100%;
+  
+}
+.specificationbtn:hover{
+  background: var(--primry-color);
+  color: var(--white-lily-color);
+}
+
+#limitedUnitSection{
+  background: url(../images/whitelily/uppergallerybackground.png);
+}
+#limitedUnitSection .second-heading{
+  color: var(--white-lily-color);
+}
+.downloadbrochurediv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.section-headingsection{
+  text-align: center !important;
+  color: var(--main-color) !important;
+  text-transform: capitalize !important;
+  font-size: 3.8rem !important;
+  font-weight: 300 !important;
+  letter-spacing: 0px !important;
+  line-height: 120% !important;
+}
+/************************************************ White Lily Page End ***************************************/
 
 
 
 
-
-/* ----------------------------responsive website layout start  ---------------------------*/
+/*************************************responsive website layout start  ***************************************/
 
 
 
@@ -919,12 +1192,60 @@ section {
   }
   .third .owl-item {
     margin: 0px 4rem;
-}
-.four .owl-item {
+  }
+  .four .owl-item {
 
-  margin: auto 5rem;
-  margin-bottom: 1rem;
-}
+    margin: auto 5rem;
+    margin-bottom: 1rem;
+  }
+  .formdiv{
+    margin-top: 2rem !important;
+    margin: 0 auto;
+  }
+  .contactdetails  {
+    padding: 2rem;
+  }
+  .socialmediaicons{
+    padding: 2rem;
+
+  }
+  #footer{
+    padding: 2rem;
+  }
+  .postfooter{
+    padding: 2rem !important;
+  }
+
+  .rectangleDiv li{
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .rectangle a{
+    font-size: 1rem !important;
+  }
+  .li7{
+    width: 100% !important;
+    height: auto !important;
+    padding: 2rem 1rem !important;
+    border-left: 0.1px solid var(--primary-button-background);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+  }
+  .limite{
+    display: none;
+  }
+  
+  #amenitiesSection{
+    height: 37.077rem;
+  }
+  .downloadbrochurediv img{
+    width: 60%;
+  }
 }
 
  /* Tablets in portrait mode / */
@@ -967,6 +1288,9 @@ section {
     margin: auto 3.269rem;
     margin-bottom: 1rem;
   }
+  .downloadbrochurediv img{
+    width: 60%;
+  }
 }
 /* / Tablets in landscape mode and small desktops / */
 @media (min-width: 1024px) and (max-width: 1399px) {
@@ -978,6 +1302,18 @@ section {
   }
   .videoPanel img{
     width: 99%;
+  }
+  .two .owl-item{
+    margin: auto 0.673rem  !important ;
+  }
+  #amenitiesSection{
+    height: 906px;
+  }
+  .masterplansection  img{
+    width: 72%;
+  }
+  .downloadbrochurediv img{
+    width: 15%;
   }
 }
 /* / Standard desktops and laptops / */
@@ -1011,12 +1347,30 @@ html {
   .videoPanel img{
     width: 99%;
   }
-
+  #header .owl-carousel .owl-item img {
+    
+    height: 88vh;
+  }
+  #amenitiesSection{
+    height: 1014px;
+  }
+  .masterplansection  img{
+    width: 74.5%;
+  }
+  .downloadbrochurediv img{
+    width: 15%;
+  }
 }
 /* / Large screens and high-resolution displays / */
 @media (min-width: 1920px) {
     .container {
-      max-width: 1440px; /* Adjust the desired width based on your design needs */
+      max-width: 1440px; 
+      padding: 0;
+    }
+    .row {
+      max-width: 1440px; 
+      padding: 0;
+      margin: 0;
     }
     #section2 .owl-carousel .item {
     /* height: 28.6rem;  */
