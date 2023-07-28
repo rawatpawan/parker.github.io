@@ -1220,7 +1220,7 @@ section {
     width: 100%;
     height: auto;
     padding: 2rem 1rem;
-    padding: 0;
+    padding: 1rem 0px;
     margin: 0;
   }
   .rectangle a{
@@ -1229,12 +1229,18 @@ section {
   .li7{
     width: 100% !important;
     height: auto !important;
-    padding: 2rem 1rem !important;
+    padding: 1rem 0px !important;
     border-left: 0.1px solid var(--primary-button-background);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   
+  }
+  #overviewSection{
+    margin-top: 2rem;
+  }
+  .scrolldowndiv{
+    padding-bottom: 0px;
   }
   .limite{
     display: none;
