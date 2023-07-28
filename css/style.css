@@ -1252,6 +1252,9 @@ section {
   .downloadbrochurediv img{
     width: 60%;
   }
+  .masterplansection img{
+    width: 85%;
+  }
 }
 
  /* Tablets in portrait mode / */
