@@ -24,54 +24,61 @@
 
 
 
-    // When the residential button is clicked
-    $(".residentailButton").on("click", function() {
-        // Toggle classes
-        $(this).removeClass("button2").addClass("button1");
-        $(".commercialButton").removeClass("button1").addClass("button2");
-        
-  
-        // Show the residential content and hide the commercial content
-        $(".residentialRow").show();
-        $(".commercialRow").hide();
-      });
-  
-      // When the commercial button is clicked
-      $(".commercialButton").on("click", function() {
-        // Toggle classes
-        $(this).removeClass("button2").addClass("button1");
-        $(".residentailButton").removeClass("button1").addClass("button2");
-  
-        // Show the commercial content and hide the residential content
-        $(".residentialRow").hide();
-        $(".commercialRow").show();
-      });
 
+        // Function to hide all sections and reset button classes
+        function hideAllSectionsAndResetButtons() {
+          $(".residentialRow, .commercialRow, .plotRow").addClass("hide-section");
+          $(".residentailButton, .commercialButton, .plotButton").removeClass("button1").addClass("button2");
+        }
+      
+        // Button click event for "Residential"
+        $(".residentailButton").on("click", function() {
+          hideAllSectionsAndResetButtons();
+          $(this).removeClass("button2").addClass("button1");
+          $(".residentialRow").removeClass("hide-section");
+        });
+      
+        // Button click event for "Commercial"
+        $(".commercialButton").on("click", function() {
+          hideAllSectionsAndResetButtons();
+          $(this).removeClass("button2").addClass("button1");
+          $(".commercialRow").removeClass("hide-section");
+        });
+      
+        // Button click event for "Plot"
+        $(".plotButton").on("click", function() {
+          hideAllSectionsAndResetButtons();
+          $(this).removeClass("button2").addClass("button1");
+          $(".plotRow").removeClass("hide-section");
+        });
+
+      
+      
       // layout master and unnits toggle
 
 
- $("#planSection .unitsLayoutButton").on("click", function() {
-      // Toggle the button classes
-      $(".masterPlanButton").removeClass("button1").addClass("button2");
-      $(this).removeClass("button2").addClass("button1");
+$("#planSection .unitsLayoutButton").on("click", function() {
+    // Toggle the button classes
+    $(".masterPlanButton").removeClass("button3").addClass("button2");
+    $(this).removeClass("button2").addClass("button3");
 
-      // Hide masterplansection and show unitslayoutsection
-      $("#planSection .masterplansection").addClass("hide-section");
-      $("#planSection .unitslayoutsection").removeClass("hide-section");
-    });
+    // Hide masterplansection and show unitslayoutsection
+    $("#planSection .masterplansection").addClass("hide-section");
+    $("#planSection .unitslayoutsection").removeClass("hide-section");
+});
 
-    $("#planSection .masterPlanButton").on("click", function() {
-      // Toggle the button classes
-      $(".unitsLayoutButton").removeClass("button1").addClass("button2");
-      $(this).removeClass("button2").addClass("button1");
+$("#planSection .masterPlanButton").on("click", function() {
+    // Toggle the button classes
+    $(".unitsLayoutButton").removeClass("button3").addClass("button2");
+    $(this).removeClass("button2").addClass("button3");
 
-      // Hide unitslayoutsection and show masterplansection
-      $("#planSection .unitslayoutsection").addClass("hide-section");
-      $("#planSection .masterplansection").removeClass("hide-section");
-    });
+    // Hide unitslayoutsection and show masterplansection
+    $("#planSection .unitslayoutsection").addClass("hide-section");
+    $("#planSection .masterplansection").removeClass("hide-section");
+});
 
 
-  });
+});
 
   $('[data-toggle="slide-collapse"]').on('click', function() {
     $navMenuCont = $($(this).data('target'));
@@ -93,8 +100,8 @@
     nav:true,
     navText :false,
     dots:true,
-    autoplay:true,
-    autoplayTimeout: 200000,
+    // autoplay:true,
+    autoplayTimeout: 2000,
     responsive:{
         0:{
             items:1
@@ -279,6 +286,30 @@ $('.animicarousel').owlCarousel({
       }
     }
   });
+
+  $(' .whiteLillyResidencyanimicarousel').owlCarousel({
+    items: 3, // Number of items to display
+    loop: true, // Infinite loop
+    margin: 15, 
+    nav: true,
+    navText: [
+        '<img src="images/whitelily-residency/leftarrow.png" alt="Previous" style="width:32px;height:21px">',
+        '<img src="images/whitelily-residency/rightarrow.png" alt="Previous" style="width:32px;height:21px">',
+        ],
+    rtl: false, 
+    autoplay: false, 
+    autoplaySpeed: 2000, 
+    responsive: {
+      0: {
+        items: 1 
+      },
+      768: {
+        items: 3 
+      }
+    }
+  });
+
+
   $('.unitslayout').owlCarousel({
     items: 4, 
     loop: true, 
@@ -302,6 +333,41 @@ $('.animicarousel').owlCarousel({
         }
     }
 });
+
+
+$('.residentialRowCarousel').owlCarousel({
+    items: 3, 
+    loop: true,
+    margin:10,
+    nav: true,
+    navText: [
+        // '<img src="images/whitelily/leftarrow.png" alt="Previous" style="width:32px;height:21px">',
+        // '<img src="images/whitelily/rightarrow.png" alt="Previous" style="width:32px;height:21px">',
+        '<i class="fa fa-solid fa-arrow-left" style="width:32px;height:21px"></i>',
+        '<i class="fa fa-solid fa-arrow-right" style="width:32px;height:21px"></i>'
+        ],
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 500,
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 3 
+      },
+      992: {
+        items: 3 
+      }
+    }
+  });
+
+
+
+
+
+
+
 $(".rectangleDiv a").on("click", function(event) {
 if (this.hash !== "") {
     event.preventDefault();
@@ -322,5 +388,35 @@ $(this).addClass("active-link");
 
 
 
+// Function to hide all sections and reset button classes
+function hideAllSectionsAndResetButtons() {
+    $(".residencymasterplansection, .highriselayoutsection, .lowriselayoutsection").addClass("hide-section");
+    $(".residencymasterPlanButton, .highriseLayoutButton, .lowriseLayoutButton").removeClass("button3").addClass("button2");
+  }
+  
+  // Initially hide all sections except the first one
+  $(".highriselayoutsection, .lowriselayoutsection").addClass("hide-section");
+  
+  // Button click event for "MASTER PLAN"
+  $(".residencymasterPlanButton").on("click", function() {
+    hideAllSectionsAndResetButtons();
+    $(".residencymasterplansection").removeClass("hide-section");
+    $(this).removeClass("button2").addClass("button3");
+  });
+  
+  // Button click event for "HIGH RISE FLOOR PLAN"
+  $(".highriseLayoutButton").on("click", function() {
+    hideAllSectionsAndResetButtons();
+    $(".highriselayoutsection").removeClass("hide-section");
+    $(this).removeClass("button2").addClass("button3");
+  });
+  
+  // Button click event for "LOW RISE FLOOR PLAN"
+  $(".lowriseLayoutButton").on("click", function() {
+    hideAllSectionsAndResetButtons();
+    $(".lowriselayoutsection").removeClass("hide-section");
+    $(this).removeClass("button2").addClass("button3");
+  });
+  
 
       

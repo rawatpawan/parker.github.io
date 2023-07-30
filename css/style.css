@@ -21,6 +21,39 @@ html {
   src: url('../fonts/TrajanPro-Regular.ttf') format('truetype');
   font-weight: normal;
 }
+/**************** Bodoni *********************/
+
+/* Bold */
+@font-face {
+  font-family: 'Bodoni MT Bold';
+  src: url('../fonts/BOD_B.TTF') format('truetype');
+  font-weight: bold;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Bodoni MT Italic';
+  src: url('../fonts/BOD_I.TTF') format('truetype');
+  font-style: italic;
+}
+
+
+/* Bold Italic */
+@font-face {
+  font-family: 'Bodoni MT Bold Italic';
+  src: url('../fonts/BOD_BI.TTF') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Bodoni MT Regular';
+  src: url('../fonts/BOD_R.TTF') format('truetype');
+  font-weight: normal;
+}
+
+
 body {
   --main-color: #00377b;
   --primry-color: #E5B250;
@@ -150,7 +183,16 @@ section {
   font-size: 3rem; /* Adjust the desired size */
   color: var(--main-color); /* Adjust the desired color */
 }
-
+#whiteLillyPage .owl-carousel .owl-nav button.owl-prev i,
+#whiteLillyPage .owl-carousel .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: var(--primry-color); /* Adjust the desired color */
+}
+#whiteLillyResidencyPage .owl-carousel .owl-nav button.owl-prev i,
+#whiteLillyResidencyPage .owl-carousel .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: #00280d; /* Adjust the desired color */
+}
 
 .card {
   /* box-shadow: 0 5px 8px rgba(0,0,0,0.3); */
@@ -236,21 +278,29 @@ section {
   line-height: 150%;
   letter-spacing: 0px;
   text-align: center;
+  text-transform: uppercase;
 }
 .desktopMenu .secondtree .dropdown-item{
   color: var(--background-color);
+  text-align: left;
+  text-transform: capitalize;
 }
 .desktopMenu .fristtree .dropdown-item:hover{
-  color: var(--primary-button-background);
+  /* color: var(--primary-button-background); */
   background: transparent;
 }
 
 .desktopMenu .nav-link:hover{
-  color: var(--primary-button-background);
+  /* color: var(--primary-button-background); */
   background: transparent;
 }
 
-
+.fristtree li:hover{
+  background: var(--primry-color);
+}
+.secondtree li:hover{
+  background: transparent;
+}
 .desktopMenu .fristtree li{
   display: flex;
   justify-content: center;
@@ -260,52 +310,79 @@ section {
 }
 
 .desktopMenu .fristtree li:not(:first-child) {
-  border-left: 0.1px solid white;
+  border-left: 0.1px solid #939598;
 }
 
 .desktopMenu .secondtree li:not(:last-child) {
   border-bottom: 0.1px solid black;
 }
-.desktopMenu .navbar .navbar-nav .nav-link:hover{
+/* .desktopMenu .navbar .navbar-nav .nav-link:hover{
   color: var(--primary-button-background);
+} */
+.secondtreesecondary .nav-link:hover{
+  color: white  !important;
+}  
+.secondtreesecondary li:hover{
+  color: white  !important;
 }
-
+.secondtreesecondary:hover{
+  background: red;
+}
 .desktopMenu .secondtreesecondary:before {
   content: '';
   position: absolute;
-  top: -20%;
+  top: -14%;
+  left: 70%;
   border-bottom: 1rem solid var(--background-color);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
+}
+.desktopMenu .secondtreesecondary:hover:before {
+  border-bottom: 1rem solid var(--primry-color);
+
 }
 .desktopMenu .secondarrow:before {
   content: '';
   position: absolute;
-  top: -10%;
-  left: 38%;
+  top: -14%;
+  left: 41%;
   border-bottom: 1rem solid var(--background-color);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
+}
+.desktopMenu .secondarrow:hover:before {
+  border-bottom: 1rem solid var(--primry-color);
+
 }
 .desktopMenu .threearrow:before {
   content: '';
   position: absolute;
-  top: -10%;
-  left: 50%;
+  top: -14%;
+  left: 56%;
   border-bottom: 1rem solid var(--background-color);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
+}
+.desktopMenu .threearrow:hover:before {
+  border-bottom: 1rem solid var(--primry-color);
+
 }
 .desktopMenu .fourarrow:before {
   content: '';
   position: absolute;
-  top: -10%;
-  left: 65%;
+  top: -14%;
+  left: 67%;
   border-bottom: 1rem solid var(--background-color);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
 }
+.desktopMenu .fourarrow:hover:before {
+  border-bottom: 1rem solid var(--primry-color);
 
+}
+#ResidentialDropdown {
+  color: white !important;
+}
   @media only screen and (min-width: 960px) {
   .firstMenu:hover .fristtree {
     display: block;
@@ -321,9 +398,10 @@ section {
   .navbar-expand-lg .navbar-nav .fristtree{
     position: fixed;
     top: 0%;
-    margin-top: 12.4rem;
+    margin-top: 12.3rem;
     left: 50%;
     transform: translateX(-50%);
+    padding: 0px;
   }
  
   .firstMenu .fristtree {
@@ -395,7 +473,9 @@ section {
   margin-right: 1.24rem;
 }
 
-
+.two .owl-stage{
+  margin-bottom: 1rem;
+}
 
 
 
@@ -448,7 +528,16 @@ section {
   width:18.58rem;
   height:5.7rem;
 }
-
+.button3{
+  background-color: #8B0044;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 120%;
+  width:18.58rem;
+  height:5.7rem;
+}
 /*header*/
 
 /* .header{
@@ -466,7 +555,9 @@ section {
 /************************section2 *******************/
 
 #section2{
-  background: url(../images/parkreality.jpg);
+  background: url(../images/parkreality.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #section2 .owl-carousel .item {
   /* margin-right: 1rem;
@@ -475,7 +566,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--primary-button-background);
+  border: 1px solid #939598;
   
 }
 #section2 .card:hover{
@@ -550,7 +641,7 @@ section {
   font-size: 1.635rem;
 }
 #section5 p{
-  margin-top: 1rem;
+  margin-top: 2px;
   color: var(--background-color);
   font-weight: 400;
   font-size: 1.635rem;
@@ -574,25 +665,34 @@ section {
   width: 43.077rem;
   height: 68.846rem;
   background: #ffffff;
-  box-shadow: 3px 0 7px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
   transition: all 0.5s linear;
 
 
 }
-  /* Add styles for hover effect */
-  .residentialInner:hover {
+.residentialInner:hover {
 
-    box-shadow: 6px 0 14px 0 rgba(0, 0, 0, 0.5);
-  
-    transform: translateY(-6px);
-  }
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+
+  transform: translateY(-6px);
+}
 .residentialInnerimg{
   width: 43.077rem;
   
 }
+.residentialInner {
+  overflow: hidden;
+}
+.residentialRow .owl-stage{
+  margin-bottom: 2rem;
+}
+.residentialInnerimg {
+  transition: transform 0.3s ease;
+}
 
-
-
+.residentialInner:hover .residentialInnerimg {
+  transform: scale(1.015);
+}
 
 #section6{
   background: url(../images/the_talk.jpg);
@@ -670,13 +770,15 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 3px 0 7px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
 
 }
 .newunder{
   width: 38.365rem;
 }
-
+.four  .owl-stage{
+  margin-top: 2rem;
+}
 .formdiv{
   height: 60.192rem;
   width: 43.077rem;
@@ -696,6 +798,10 @@ section {
   height: 5.962rem;
   background: transparent;
   border: 2px solid var(--primary-button-background);
+  align-items: left;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--main-color);
 }
 
 
@@ -803,7 +909,9 @@ section {
   padding: 30px 0;
   color: #fff;
 }
-
+.footerheading{
+  font-weight: 500 !important;
+}
 
 
 #imagecarousel{
@@ -867,7 +975,62 @@ section {
 
 /************************************************ White Lily Page Start *************************************/
 
+.carousel-container {
+  position: relative;
+}
 
+.owl-carousel.first {
+  position: relative;
+  z-index: 1;
+}
+
+.projectlogo {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.infocontainer {
+  /* Background color with opacity */
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+}
+
+.infocontainer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/whitelily/carouselinfobg.png);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+.infocontainer p{
+  color: #ffffff;
+  font-weight: 700;
+}
+.infocontainer .col-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.firstp  {
+  font-size: 2.95rem ;
+}
+
+.infocontainer .col-3:not(:first-child) {
+  border-left: 0.1px solid #939598;
+}
 
 .scrolldown p{
   font-weight: 700;
@@ -936,12 +1099,52 @@ section {
 
 
 #amenitiesSection{
-  background: url(../images/whitelily/amenities.png);
+  background: url(../images/whitelily/amenities1.png);
   height: 123.077rem;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+ /*** New added amenities style **/
+
+
+.amenitiesSectionheading{
+  font-family: 'Bodoni MT Bold', serif; 
+  font-size: 3.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+.animitieul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animitieul li {
+  margin: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.animitieul li img{
+  height: 10.962rem;
+  width: 10.962rem;
+}
+.animitieul li p{
+  font-size: 1.442rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: auto;
+  margin-top: 1rem;
+}
+
+ /*** New added amenities style end **/
+
+
+
 .aminitesslider{
   background: url(../images/whitelily/animitiebackground.png);
 }
@@ -979,6 +1182,12 @@ section {
   border: 2px solid var(--primry-color);
   padding: 1rem;
 }
+
+
+#locationSection .secrow + .secrow {
+  
+  border-left: none;
+}
 #locationSection img{
   height: 12.019rem;
   width: 13.942rem;
@@ -995,7 +1204,13 @@ section {
   height: 59.615rem;
   width: 69.231rem;
 }
-
+.mapcol{
+  background: #ffffff;
+  padding: .5rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #uppergallerySection{
   background: url(../images/whitelily/uppergallerybackground.png);
 }
@@ -1003,7 +1218,7 @@ section {
   justify-content: center;
 }
 .righcol .col-5{
-  background: var(--white-lily-color);
+  background: #8B0044;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1034,10 +1249,23 @@ section {
 }
 
 #gallerySection .aimidivcarousel {
-  box-shadow: 3px 0 7px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
  
 }
 
+.aimidivcarousel {
+  position: relative;
+  overflow: hidden; 
+}
+
+.aimidivcarousel .glightbox img {
+  transition: transform 0.5s ease;
+  width: 100%; 
+}
+
+.aimidivcarousel .glightbox:hover img {
+  transform: scale(1.1);
+}
 #specificationsSection{
   background: url(../images/whitelily/specificationbackgroun.png);
   background-position: center center;
@@ -1114,6 +1342,120 @@ section {
   line-height: 120% !important;
 }
 /************************************************ White Lily Page End ***************************************/
+
+/************************************************ White Lily Residency Page start ***************************************/
+
+
+#whiteLillyResidencyPage .projectlogo {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+#whiteLillyResidencyPage .firstp{
+  font-size: 1.923rem;
+}
+
+#whiteLillyResidencyPage .rectangle {
+
+  background: #000000;
+
+}
+#whiteLillyResidencyPage .active-link {
+
+  background: var(--primry-color);
+
+}
+
+#whiteLillyResidencyPage #amenitiesSection{
+  background: url(../images/whitelily-residency/amenities.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#whiteLillyResidencyPage .aminitesslider{
+  background: url(../images/whitelily-residency/animitiebackground.png);
+}
+
+
+#whiteLillyResidencyPage .section-heading{
+  color:#00280d;
+}
+#locationSection{
+  padding-bottom: 30px;
+}
+
+#whiteLillyResidencyPage .button3{
+  background-color: #00280d;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 120%;
+  width:22.58rem;
+  height:5.7rem;
+}
+
+#whiteLillyResidencyPage .button2{
+  background-color: var(--primary-button-background);
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 120%;
+  width: 22.58rem;
+  height: 5.7rem;
+}
+
+
+#whiteLillyResidencyPage #locationSection{
+  background: url(../images/whitelily-residency/locationbackground.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#whiteLillyResidencyPage .righcol .col-5 {
+  background: #00280d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  margin: 1rem;
+}
+
+.faciltyheading{
+  font-size: 5.962rem;
+  font-weight: 700;
+  color: var(--primary-button-background);
+
+}
+
+
+#whiteLillyResidencyPage #moodvideo{
+  width: 63.462rem;
+    height: 46.154rem;
+
+}
+#whiteLillyResidencyPage #specificationsSection {
+  background: url(../images/whitelily-residency/specificationbackgroun.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+/************************************************ White Lily Residency Page End ***************************************/
 
 
 
@@ -1255,6 +1597,13 @@ section {
   .masterplansection img{
     width: 85%;
   }
+  #whiteLillyResidencyPage #planSection img{
+    width: 95%;
+  }
+  #whiteLillyResidencyPage #moodvideo {
+    width: 48.462rem;
+    height: 46.154rem;
+  }
 }
 
  /* Tablets in portrait mode / */
@@ -1324,6 +1673,22 @@ section {
   .downloadbrochurediv img{
     width: 15%;
   }
+  .projectlogo {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 10%;
+  }
+  .infocontainer {
+    /* Background color with opacity */
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    bottom: -0.5%;
+    z-index: 2;
+  }
 }
 /* / Standard desktops and laptops / */
 @media (min-width: 1400px) and (max-width: 1919px) {
@@ -1369,6 +1734,39 @@ html {
   .downloadbrochurediv img{
     width: 15%;
   }
+  #locationSection iframe {
+    height: 59.615rem;
+    width: 72.231rem;
+  }
+  .mapcol {
+    background: #ffffff;
+    padding: 1.5rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #uppergallerySection iframe {
+    width: 69.462rem;
+    height: 46.154rem;
+  }
+
+  .projectlogo {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 10%;
+  }
+  .infocontainer {
+    /* Background color with opacity */
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 100%;
+    bottom: -3.5%;
+    z-index: 2;
+  }
 }
 /* / Large screens and high-resolution displays / */
 @media (min-width: 1920px) {
@@ -1387,7 +1785,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--primry-color);
+    border: 1px solid #939598;
+
     /* margin-right: 1rem; */
   }
   .mobileMenu{
