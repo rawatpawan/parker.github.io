@@ -293,8 +293,10 @@ $('.animicarousel').owlCarousel({
     margin: 15, 
     nav: true,
     navText: [
-        '<img src="images/whitelily-residency/leftarrow.png" alt="Previous" style="width:32px;height:21px">',
-        '<img src="images/whitelily-residency/rightarrow.png" alt="Previous" style="width:32px;height:21px">',
+        // '<img src="images/whitelily-residency/leftarrow.png" alt="Previous" style="width:32px;height:21px">',
+        // '<img src="images/whitelily-residency/rightarrow.png" alt="Previous" style="width:32px;height:21px">',
+        '<i class="fa fa-solid fa-arrow-left" style="width:32px;height:21px"></i>',
+        '<i class="fa fa-solid fa-arrow-right" style="width:32px;height:21px"></i>'
         ],
     rtl: false, 
     autoplay: false, 

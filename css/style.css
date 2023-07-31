@@ -193,7 +193,11 @@ section {
   font-size: 3rem; /* Adjust the desired size */
   color: #00280d; /* Adjust the desired color */
 }
-
+#whiteLillyResidencyPage .owl-carousel .owl-nav button.owl-prev i,
+#whiteLillyResidencyPage .owl-carousel .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: #3a120c; /* Adjust the desired color */
+}
 .card {
   /* box-shadow: 0 5px 8px rgba(0,0,0,0.3); */
   border: none;
@@ -1450,12 +1454,70 @@ section {
 
 
 
-
-
-
-
-
 /************************************************ White Lily Residency Page End ***************************************/
+
+
+/************************************************ Park Residency Page start ***************************************/
+
+#parkResidency .rectangle {
+  background: #7a2716;
+}
+#parkResidency .active-link {
+
+  background: var(--primry-color);
+
+}
+#parkResidency .rectangleDiv li:not(:last-child) {
+  border-left: 0.1px solid #b97938;
+}
+
+#parkResidency .aminitesslider {
+  background: url(../images/whitelily-residency/animitiebackground.png);
+}
+
+#parkResidency #amenitiesSection {
+  background: url(../images/park-residency/amenities.png);
+  height: 80.0962rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#parkResidency .whiteLillyResidencyanimicarousel .owl-nav button.owl-prev i,
+#parkResidency .whiteLillyResidencyanimicarousel .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: #3a120c; /* Adjust the desired color */
+}
+#parkResidency .section-heading {
+  color: #3a120c;
+}
+
+#parkResidency .button3 {
+  background-color: #7a2716;
+  color: #ffffff;
+ 
+}
+#parkResidency #locationSection {
+  background: url(../images/park-residency/locationbackground.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#parkResidency .righcol .col-5 {
+  background: #7a2716;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  margin: 1rem; */
+}
+#parkResidency #specificationsSection {
+  background: url(../images/park-residency/specificationbackgroun.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/************************************************ Park  Residency Page End ***************************************/
 
 
 
@@ -1597,12 +1659,30 @@ section {
   .masterplansection img{
     width: 85%;
   }
+  #parkResidency .unitslayoutsection img{
+    width: 85%;
+  }
   #whiteLillyResidencyPage #planSection img{
     width: 95%;
   }
   #whiteLillyResidencyPage #moodvideo {
     width: 48.462rem;
     height: 46.154rem;
+  }
+  #parkResidency #amenitiesSection{
+    height: 25rem;
+  }
+  .infocontainer{
+    display: none;
+  }
+  .projectlogo{
+    display: none;
+  }
+  #whiteLillyResidencyPage #amenitiesSection {
+    height: 38rem;
+  }
+  .parkresidencytable  img{
+    width: 60%;
   }
 }
 
@@ -1649,6 +1729,16 @@ section {
   .downloadbrochurediv img{
     width: 60%;
   }
+  .infocontainer{
+    display: none;
+  }
+  .projectlogo{
+    display: none;
+  }
+  .parkresidencytable  img{
+    width: 30%;
+  }
+ 
 }
 /* / Tablets in landscape mode and small desktops / */
 @media (min-width: 1024px) and (max-width: 1399px) {
@@ -1670,6 +1760,9 @@ section {
   .masterplansection  img{
     width: 72%;
   }
+  #parkResidency .unitslayoutsection img{
+    width: 88%;
+  }
   .downloadbrochurediv img{
     width: 15%;
   }
@@ -1688,6 +1781,12 @@ section {
     width: 100%;
     bottom: -0.5%;
     z-index: 2;
+  }
+  #parkResidency #amenitiesSection{
+    height: 75rem;
+  }
+  .parkresidencytable  img{
+    width: 30%;
   }
 }
 /* / Standard desktops and laptops / */
@@ -1726,10 +1825,13 @@ html {
     height: 88vh;
   }
   #amenitiesSection{
-    height: 1014px;
+    height: 1024px;
   }
   .masterplansection  img{
     width: 74.5%;
+  }
+  #parkResidency .unitslayoutsection img{
+    width: 87.5%;
   }
   .downloadbrochurediv img{
     width: 15%;
@@ -1766,6 +1868,16 @@ html {
     width: 100%;
     bottom: -3.5%;
     z-index: 2;
+  }
+  #parkResidency #amenitiesSection {
+    background: url(../images/park-residency/amenities.png);
+    height: 75rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .parkresidencytable  img{
+    width: 30%;
   }
 }
 /* / Large screens and high-resolution displays / */
