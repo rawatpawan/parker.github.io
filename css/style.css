@@ -198,6 +198,16 @@ section {
   font-size: 3rem; /* Adjust the desired size */
   color: #3a120c; /* Adjust the desired color */
 }
+#parkcitycentre .owl-carousel .owl-nav button.owl-prev i,
+#parkcitycentre .owl-carousel .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: #00234c; /* Adjust the desired color */
+}
+#parkersuites .barrestrocarousel .owl-nav button.owl-prev i,
+#parkersuites .barrestrocarousel .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: var(--primry-color); /* Adjust the desired color */
+}
 .card {
   /* box-shadow: 0 5px 8px rgba(0,0,0,0.3); */
   border: none;
@@ -1256,6 +1266,22 @@ section {
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
  
 }
+#gallerySection .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#gallerySection .col-md-3 {
+  display: flex;
+}
+
+#gallerySection .aimidivcarousel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 .aimidivcarousel {
   position: relative;
@@ -1519,6 +1545,213 @@ section {
 
 /************************************************ Park  Residency Page End ***************************************/
 
+/************************************************ Park City Centre Page start ***************************************/
+
+#parkcitycentre .rectangle {
+  background: #00234c;
+}
+#parkcitycentre .active-link {
+
+  background: var(--primry-color);
+
+}
+#everything{
+  background: url(../images/city-centre/everythingbackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+/* CSS for the 1st and 3rd div */
+.outereverything:nth-child(odd) {
+  border: 4px solid var(--primry-color);
+  padding: 0px;
+  background: #c9252c;
+}
+
+/* CSS for the 2nd and 4th div */
+.outereverything:nth-child(even) {
+  border: 4px solid var(--primry-color);
+  padding: 0px;
+  background: #00234c;
+}
+.outereverything img{
+  width: 100%;
+}
+.outereverything h3{
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.805rem;
+  line-height: 2.308rem;
+  font-weight: 700;
+  margin-top: 4rem;
+}
+.outereverything p{
+  font-size: 1.635rem;
+  color: #ffffff;
+  line-height: 2.308rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+}
+#everything .container {
+  display: flex;
+  justify-content: space-between;
+}
+#everything .grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem; 
+}
+#parkcitycentre .li7{
+  width: 31rem !important;
+}
+#parkcitycentre .aminitesslider {
+  background: url(../images/city-centre/animitiebackground.jpg);
+}
+
+#operationalbrands h2{
+  font-size: 2.981rem;
+  display: inline;
+  color: white;
+  background: #ec1c24;
+  font-weight: 600;
+  padding: 1rem;
+}
+#operationalbrands ul{
+  margin-top: 2rem;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.secondul{
+    display: flex !important;
+    justify-content: center !important;
+}
+.secondul li{
+  margin: auto .5rem !important;
+}
+
+#belowoperationalbrands{
+  background: #023f88;
+}
+#belowoperationalbrands h5{
+
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3.038rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+#belowoperationalbrands ul{
+  padding: 0px;
+}
+#belowoperationalbrands ul li{
+  display: flex;
+  align-items: center;
+}
+#parkcitycentre #locationSection{
+  background: url(../images/city-centre/locationbackground.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parkcitycentre .righcol .col-5{
+  background: #00234c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 2rem;
+    margin: 1rem;
+}
+/************************************************ Park City Centre Page End ***************************************/
+
+
+
+/************************************************ Park Suites Page start ***************************************/
+#parkersuites .rectangle {
+  background: #00280d;
+}
+#parkersuites .active-link {
+
+  background: var(--primry-color);
+
+}
+
+#barSection{
+  background-color: #005c38;
+  background-image: url('../images/background.jpg');
+  background-blend-mode: multiply; 
+}
+
+
+
+#parkersuites .barrestrocarousel .owl-nav button.owl-prev {
+  position: absolute;
+  left: -8rem;
+   background: none;
+  
+}
+#parkersuites .barrestrocarousel .owl-nav button.owl-next {
+  position: absolute;
+  right: -8rem;
+   background: none;
+}
+#parkersuites #amenitiesSection {
+  background: url(../images/parker-suites/animities.jpg);
+  height: 85.57rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#parkersuites .aminitesslider{
+  background: var(--primry-color);
+}
+.aminitessliderul p{
+  color: #ffffff;
+  font-weight: 700;
+}
+.aminitessliderul {
+  list-style: none;
+  padding-left: 20px; /* Adjust the spacing between the bullet point and text */
+}
+
+.aminitessliderul li {
+  position: relative;
+  padding-left: 15px; /* Adjust the spacing between the bullet point and text */
+}
+
+.aminitessliderul li:before {
+  content: '';
+  position: absolute;
+  top: 1rem; 
+  left: 0;
+  width: 6px; 
+  height: 6px; 
+  background-color: #00280d; 
+  border-radius: 50%;
+}
+#parkersuites .button3 {
+  background-color: #00280d;
+  color: #ffffff;
+}
+#parkersuites #locationSection {
+  background: url(../images/parker-suites/locationbackground.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parkersuites .righcol .col-5 {
+  background: #00280d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  margin: 1rem;
+  height: 23.269rem;
+}
+/************************************************ Park Suites Page End ***************************************/
 
 
 
@@ -1669,6 +1902,7 @@ section {
     width: 48.462rem;
     height: 46.154rem;
   }
+
   #parkResidency #amenitiesSection{
     height: 25rem;
   }
@@ -1684,6 +1918,33 @@ section {
   .parkresidencytable  img{
     width: 60%;
   }
+  #everything .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; 
+  }
+  #operationalbrands ul li img{
+    width: 4.5rem;
+  }
+  .secondul{
+    display: flex !important;
+    justify-content: space-around !important;
+}
+  .secondul li{
+    margin: auto !important;
+  }
+  #belowoperationalbrands h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2.038rem ;
+    font-weight: 400;
+    color: #ffffff;
+  }
+ #belowoperationalbrands img{
+  width: 10%;
+ }
+ #parkersuites #amenitiesSection{
+  height: 25.3rem;
+ }
 }
 
  /* Tablets in portrait mode / */
@@ -1738,7 +1999,9 @@ section {
   .parkresidencytable  img{
     width: 30%;
   }
- 
+  #parkersuites #amenitiesSection{
+    height: 50.3rem;
+   }
 }
 /* / Tablets in landscape mode and small desktops / */
 @media (min-width: 1024px) and (max-width: 1399px) {
@@ -1788,6 +2051,9 @@ section {
   .parkresidencytable  img{
     width: 30%;
   }
+  #parkersuites #amenitiesSection{
+    height: 78.5rem;
+   }
 }
 /* / Standard desktops and laptops / */
 @media (min-width: 1400px) and (max-width: 1919px) {
@@ -1879,6 +2145,9 @@ html {
   .parkresidencytable  img{
     width: 30%;
   }
+  #parkersuites #amenitiesSection{
+    height: 80rem;
+   }
 }
 /* / Large screens and high-resolution displays / */
 @media (min-width: 1920px) {
@@ -1922,4 +2191,16 @@ html {
   .videoPanel .row{
     width: 102%;
   }
+  /* #gallerySection .aimidivcarousel {
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
+    width: 33.269rem;
+    height: 37rem;
+   
+  }
+  #gallerySection .aimidivcarousel img{
+    width: 33.269rem;
+    height: 23.365rem;
+  
+    
+  } */
 }

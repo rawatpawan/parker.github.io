@@ -335,8 +335,52 @@ $('.animicarousel').owlCarousel({
         }
     }
 });
-
-
+$('.whitelilyresidencyunitslayout').owlCarousel({
+  items: 4, 
+  // loop: true, 
+  nav: true, 
+  navText: [
+      '<img src="images/whitelily-residency/leftarrow.jpg" alt="Previous" style="width:32px;height:21px">',
+      '<img src="images/whitelily-residency/rightarrow.jpg" alt="Previous" style="width:32px;height:21px">',
+      ],
+  rtl: false, 
+  // autoplay: true, 
+  // autoplaySpeed: 2000, 
+  responsive: {
+      0: {
+      items: 1 
+      },
+      768: {
+      items: 1
+      },
+      992: {
+      items: 1 
+      }
+  }
+});
+$('.barrestrocarousel').owlCarousel({
+  items: 4, 
+  // loop: true, 
+  nav: true, 
+  navText: [
+    '<i class="fa fa-solid fa-arrow-left" style="width:32px;height:21px"></i>',
+    '<i class="fa fa-solid fa-arrow-right" style="width:32px;height:21px"></i>'
+      ],
+  rtl: false, 
+  // autoplay: true, 
+  // autoplaySpeed: 2000, 
+  responsive: {
+      0: {
+      items: 1 
+      },
+      768: {
+      items: 1
+      },
+      992: {
+      items: 1 
+      }
+  }
+});
 $('.residentialRowCarousel').owlCarousel({
     items: 3, 
     loop: true,
