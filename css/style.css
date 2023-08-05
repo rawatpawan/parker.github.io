@@ -208,6 +208,16 @@ section {
   font-size: 3rem; /* Adjust the desired size */
   color: var(--primry-color); /* Adjust the desired color */
 }
+#aboutus .residentialRowCarousel  .owl-nav button.owl-prev i,
+#aboutus .residentialRowCarousel  .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: var(--primry-color); /* Adjust the desired color */
+}
+#contactus .residentialRowCarousel  .owl-nav button.owl-prev i,
+#contactus .residentialRowCarousel  .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: var(--primry-color); /* Adjust the desired color */
+}
 .card {
   /* box-shadow: 0 5px 8px rgba(0,0,0,0.3); */
   border: none;
@@ -1755,6 +1765,123 @@ section {
 
 
 
+/************************************************ About Us Page Start ***************************************/
+
+.aboutusheader{
+  background: url('../images/aboutusheader.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 87.9630vh;
+}
+.aboutusheader h1{
+  color: #ffffff;
+  text-align: center;
+  font-size: 3.778rem;
+  font-weight: 700;
+  line-height: auto;
+  padding-top: 20rem;
+  /* letter-spacing: 0; */
+}
+.vismis{
+  display: flex;
+  justify-content: space-evenly;
+}
+.innervismis{
+  margin-top: 5rem;
+  border: 4px solid var(--primry-color);
+  width: 57.212rem;
+  background: #00377b ;
+  /* display: flex;
+  justify-content: center; */
+}
+.innervismis img{
+ width: 100%;
+}
+.innervismis .discription{
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 4em;
+}
+#brandvalue{
+     background-color: var(--primry-color);
+    background-image: url(../images/background.jpg);
+    background-blend-mode: multiply;
+}
+.brandcol{
+  background: #00377b;
+  padding: 4rem;
+}
+#aboutus .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; /* You can adjust the gap as per your requirement */
+}
+#journey{
+  background: url(../images/journey.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+/************************************************ About Us Page End ***************************************/
+
+
+
+/************************************************ Contact Us Page Start ***************************************/
+
+.contatcusheader{
+  background: url('../images/contactusheader.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 87.9630vh;
+}
+
+.firstenquiryrow{
+  background:#00377b;
+  color: #ffffff;
+}
+.firstenquiryrow p{
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.secondenquiryrow{
+  background: #ffffff;
+}
+.commonerow p{
+  color: #00377b;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.emaildivquery a{
+    font-size: 4.135rem;
+}
+.emaildivquery p{
+  font-size: 3.125rem;
+}
+.emaildivquery div{
+  background: #00377b;
+   padding: 6rem;
+
+}
+#contactusform{
+  background: #f1f2f2;
+}
+#contactusform label{
+  font-size: 1.8rem;
+  
+  margin-top: 1rem !important;
+}
+#contactusform input{
+  background: #e5e6e6;
+}
+/************************************************ Contact Us Page End ***************************************/
+
+
+
+
+
+
 /*************************************responsive website layout start  ***************************************/
 
 
@@ -1945,6 +2072,29 @@ section {
  #parkersuites #amenitiesSection{
   height: 25.3rem;
  }
+ .aboutusheader h1{
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: auto;
+  padding-top: 20rem;
+  /* letter-spacing: 0; */
+}
+.secondenquiryrow  img{
+  width: 100%;
+}
+.emaildivquery  p{
+  font-size: 1rem;
+}
+.emaildivquery  a{
+  font-size: 1.8rem;
+}
+.emaildivquery div{
+  background: #00377b;
+   padding: 1rem;
+
+}
 }
 
  /* Tablets in portrait mode / */
