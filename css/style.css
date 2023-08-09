@@ -142,7 +142,7 @@ section {
 
 #header .owl-dots{
   position: absolute;
-  bottom:11%;
+  bottom:12%;
   left:25%;
   right:25%;
 }
@@ -159,7 +159,12 @@ section {
   transform: translateY(-50%);
   width: 100%;
 }
-
+.two .owl-nav {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  width: 100%;
+}
 .owl-carousel .owl-nav button.owl-prev {
   position: absolute;
   left: -5rem;
@@ -178,6 +183,10 @@ section {
   background: none; 
 }
 
+
+/* Owl Carousel Nav Button Color */
+
+
 .owl-carousel .owl-nav button.owl-prev i,
 .owl-carousel .owl-nav button.owl-next i {
   font-size: 3rem; /* Adjust the desired size */
@@ -193,11 +202,7 @@ section {
   font-size: 3rem; /* Adjust the desired size */
   color: #00280d; /* Adjust the desired color */
 }
-#whiteLillyResidencyPage .owl-carousel .owl-nav button.owl-prev i,
-#whiteLillyResidencyPage .owl-carousel .owl-nav button.owl-next i {
-  font-size: 3rem; /* Adjust the desired size */
-  color: #3a120c; /* Adjust the desired color */
-}
+
 #parkcitycentre .owl-carousel .owl-nav button.owl-prev i,
 #parkcitycentre .owl-carousel .owl-nav button.owl-next i {
   font-size: 3rem; /* Adjust the desired size */
@@ -217,6 +222,27 @@ section {
 #contactus .residentialRowCarousel  .owl-nav button.owl-next i {
   font-size: 3rem; /* Adjust the desired size */
   color: var(--primry-color); /* Adjust the desired color */
+}
+
+#whiteLillyPage .unitslayout  .owl-nav button.owl-prev i,
+#whiteLillyPage .unitslayout  .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: #8b0044; /* Adjust the desired color */
+}
+#parkResidency .owl-carousel  .owl-nav button.owl-prev i,
+#parkResidency .owl-carousel  .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: #3a120c; /* Adjust the desired color */
+}
+#parkersuites .whitelilyresidencyunitslayout  .owl-nav button.owl-prev i,
+#parkersuites .whitelilyresidencyunitslayout  .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: #00280d; /* Adjust the desired color */
+}
+#parkcitycentre .owl-carousel  .owl-nav button.owl-prev i,
+#parkcitycentre .owl-carousel  .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: #00234c; /* Adjust the desired color */
 }
 .card {
   /* box-shadow: 0 5px 8px rgba(0,0,0,0.3); */
@@ -263,8 +289,8 @@ section {
   font-weight: 700;
   color: var(--background-color);
   letter-spacing: 0px;
-  margin-right: 2rem; 
-  margin-left: 2rem;  
+  margin-right: 1.8rem; 
+  margin-left: 1.8rem;  
   text-transform: uppercase;
 }
 
@@ -294,7 +320,9 @@ section {
 .desktopMenu .secondtree{
   background: #E6E7E8
 }
-
+.desktopMenu .secondtree li{
+  padding-left: 1rem;
+}
 .desktopMenu .fristtree .dropdown-item{
   color: #ffffff;
   font-weight: 700;
@@ -339,6 +367,7 @@ section {
 
 .desktopMenu .secondtree li:not(:last-child) {
   border-bottom: 0.1px solid black;
+  border-left: none;
 }
 /* .desktopMenu .navbar .navbar-nav .nav-link:hover{
   color: var(--primary-button-background);
@@ -362,6 +391,41 @@ section {
   border-right: 1rem solid transparent;
 }
 .desktopMenu .secondtreesecondary:hover:before {
+  border-bottom: 1rem solid var(--primry-color);
+
+}
+.threetreesecondary .nav-link:hover{
+  color: white  !important;
+}  
+.threetreesecondary li:hover{
+  color: white  !important;
+}
+.threetreesecondary:hover{
+  background: red;
+}
+
+.desktopMenu .threetree{
+  background: #E6E7E8
+}
+.desktopMenu .threetree li{
+  padding-left: 1rem;
+}
+.desktopMenu .threetree .dropdown-item{
+  color: var(--background-color);
+  text-align: left;
+  text-transform: capitalize;
+}
+.threetree li:hover{
+  background: transparent;
+}
+.desktopMenu .threetree li:not(:last-child) {
+  border-bottom: 0.1px solid black;
+  border-left: none;
+
+}
+
+
+.desktopMenu .threetreesecondary:hover:before {
   border-bottom: 1rem solid var(--primry-color);
 
 }
@@ -404,7 +468,23 @@ section {
   border-bottom: 1rem solid var(--primry-color);
 
 }
+.desktopMenu .fivearrow:before {
+  content: '';
+  position: absolute;
+  top: -14%;
+  left: 90%;
+  border-bottom: 1rem solid var(--background-color);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+}
+.desktopMenu .fivearrow:hover:before {
+  border-bottom: 1rem solid var(--primry-color);
+
+}
 #ResidentialDropdown {
+  color: white !important;
+}
+#CommercialDropdown {
   color: white !important;
 }
   @media only screen and (min-width: 960px) {
@@ -689,16 +769,16 @@ section {
   width: 43.077rem;
   height: 68.846rem;
   background: #ffffff;
-  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 15px 25px 0  rgba(0, 0, 0, 0.20);
   transition: all 0.5s linear;
 
 
 }
 .residentialInner:hover {
 
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 25px 25px 5px rgba(0, 0, 0, 0.20);
 
-  transform: translateY(-6px);
+  transform: translateY(-10px);
 }
 .residentialInnerimg{
   width: 43.077rem;
@@ -715,9 +795,13 @@ section {
 }
 
 .residentialInner:hover .residentialInnerimg {
-  transform: scale(1.015);
-}
+  transform: scale(1.11);
+   /* margin-top: -5%; */
 
+}
+.residentialInnerimg{
+  margin-bottom: 3rem;
+}
 #section6{
   background: url(../images/the_talk.jpg);
   background-size: cover;
@@ -992,13 +1076,46 @@ section {
   width: 4.808rem;
   height: 16.923rem;
 }
-
+.chatbot{
+  position: fixed;
+  z-index: 2;
+  right: 2%;
+  bottom: 5%;
+  transform: translateY(-50%);
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /************************************************* Home Page End********************************************/
 
 
 /************************************************ White Lily Page Start *************************************/
+#header .first .item {
+  position: relative;
+  overflow: hidden;
+}
 
+#header .first .item img {
+  width: 100%;
+  height: auto;
+  animation: kenBurns 3.5s infinite alternate;
+}
+
+@keyframes kenBurns {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(0.5);
+  }
+}
 .carousel-container {
   position: relative;
 }
@@ -1042,6 +1159,7 @@ section {
 .infocontainer p{
   color: #ffffff;
   font-weight: 700;
+  margin-top: 1rem;
 }
 .infocontainer .col-3{
   display: flex;
@@ -1255,7 +1373,7 @@ section {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 #uppergallerySection .second-heading{
   color: var(--white-lily-color);
@@ -1271,7 +1389,9 @@ section {
   align-items: center;
   padding: 2rem 0px
 }
-
+.youtubediv img{
+  width: 95%;
+}
 #gallerySection .aimidivcarousel {
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
  
@@ -1302,7 +1422,13 @@ section {
   transition: transform 0.5s ease;
   width: 100%; 
 }
+.aimidivcarousel{
+  transition: all 0.9s linear;
+}
+.aimidivcarousel:hover{
+  transform: translateY(-10px);
 
+}
 .aimidivcarousel .glightbox:hover img {
   transform: scale(1.1);
 }
@@ -1381,12 +1507,22 @@ section {
   letter-spacing: 0px !important;
   line-height: 120% !important;
 }
+.residentialRowCarousel .owl-stage-outer{
+  padding-bottom: 3rem;
+}
 /************************************************ White Lily Page End ***************************************/
 
 /************************************************ White Lily Residency Page start ***************************************/
 
 
 #whiteLillyResidencyPage .projectlogo {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+#parkersuites .projectlogo {
   position: absolute;
   top: 25%;
   left: 50%;
@@ -1576,8 +1712,19 @@ section {
   border: 4px solid var(--primry-color);
   padding: 0px;
   background: #c9252c;
-}
+  transition: all 0.5s linear;
 
+}
+.outereverything:hover img {
+transition: all 0.5s linear;
+}
+.outereverything {
+  position: relative;
+  overflow: hidden; 
+}
+.outereverything:hover img {
+  transform: scale(1.1);
+}
 /* CSS for the 2nd and 4th div */
 .outereverything:nth-child(even) {
   border: 4px solid var(--primry-color);
@@ -1658,6 +1805,8 @@ section {
 #belowoperationalbrands ul li{
   display: flex;
   align-items: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 #parkcitycentre #locationSection{
   background: url(../images/city-centre/locationbackground.jpg);
@@ -1766,27 +1915,47 @@ section {
 
 
 /************************************************ About Us Page Start ***************************************/
+.aboutusheader {
+  position: relative;
+  overflow: hidden;
+  height: 87.9630vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
 
-.aboutusheader{
+.kenburns-bg {
   background: url('../images/aboutusheader.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 87.9630vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: kenBurns 10s infinite alternate;
 }
+
+@keyframes kenBurns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
 .aboutusheader h1{
   color: #ffffff;
   text-align: center;
   font-size: 3.778rem;
   font-weight: 700;
-  line-height: auto;
-  padding-top: 20rem;
-  /* letter-spacing: 0; */
+  padding-top: 12rem;
+  z-index: 2;
+
 }
-.vismis{
-  display: flex;
-  justify-content: space-evenly;
-}
+
 .innervismis{
   margin-top: 5rem;
   border: 4px solid var(--primry-color);
@@ -1795,9 +1964,7 @@ section {
   /* display: flex;
   justify-content: center; */
 }
-.innervismis img{
- width: 100%;
-}
+
 .innervismis .discription{
   padding-left: 4rem;
   padding-right: 4rem;
@@ -1811,6 +1978,11 @@ section {
 .brandcol{
   background: #00377b;
   padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34.615rem;
+  width: 45.192rem;
 }
 #aboutus .grid-container {
   display: grid;
@@ -1822,18 +1994,130 @@ section {
   background-position: center center;
   background-size: cover;
 }
+.innervismis {
+  overflow: hidden; 
+  position: relative; 
+  transition: transform 0.3s ease; 
+}
+
+.innervismis:hover {
+  transform: scale(1.1);
+}
+
+.innervismis img {
+  width: 100%; 
+  transition: transform 0.3s ease; 
+}
+
+.vismis {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center; 
+}
+.innervismis:hover img {
+  transform: scale(1.1); 
+}
 /************************************************ About Us Page End ***************************************/
+
+
+/************************************************ POPUP End ***************************************/
+
+.popup {
+  /* display: none; */
+  background: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.popup-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.centered-div {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 70%;
+  border-radius: 10px;
+
+}
+
+.white-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Additional styling for the form elements */
+.popup .form-control {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.popup .col-md-6{
+  text-align: left;
+  font-size: 2rem;
+  color: black;
+}
+/************************************************ POPUP End ***************************************/
+
 
 
 
 /************************************************ Contact Us Page Start ***************************************/
 
-.contatcusheader{
+.contactusheader {
+  position: relative;
+  overflow: hidden;
+  height: 87.9630vh;
+  display: flex;
+  justify-content: center;
+
+}
+
+.kenburns-bgcontactusheader {
   background: url('../images/contactusheader.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 87.9630vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: kenBurns2 10s infinite alternate;
+}
+
+@keyframes kenBurns2 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.contactusheader h1{
+  color: #ffffff;
+  text-align: center;
+  font-size: 3.778rem;
+  font-weight: 700;
+  padding-top: 3rem;
+  z-index: 2;
+  text-shadow: 0px 0px 7.2px rgba(43, 53, 78, 0.5);
+  
+
 }
 
 .firstenquiryrow{
@@ -1852,6 +2136,18 @@ section {
   color: #00377b;
   font-weight: 700;
   text-transform: capitalize;
+}
+.firstenquiryrow .col-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.commonerow .col-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .emaildivquery a{
     font-size: 4.135rem;
@@ -1874,6 +2170,13 @@ section {
 }
 #contactusform input{
   background: #e5e6e6;
+}
+.timelineimg{
+  width: 80%;
+}
+.emailidcouloumn{
+  height: 22.596rem;
+  width: 67.308rem;
 }
 /************************************************ Contact Us Page End ***************************************/
 
@@ -2095,6 +2398,15 @@ section {
    padding: 1rem;
 
 }
+#aboutus .grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem; 
+  margin: 0 4rem;
+}
+.timelineimg{
+  width: 80%;
+}
 }
 
  /* Tablets in portrait mode / */
@@ -2152,6 +2464,21 @@ section {
   #parkersuites #amenitiesSection{
     height: 50.3rem;
    }
+   #aboutus .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; 
+    margin: 0 auto !important;
+  }
+  #aboutus .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; 
+    margin: 0 4rem;
+  }
+  .timelineimg{
+    width: 80%;
+  }
 }
 /* / Tablets in landscape mode and small desktops / */
 @media (min-width: 1024px) and (max-width: 1399px) {
@@ -2181,11 +2508,11 @@ section {
   }
   .projectlogo {
     position: absolute;
-    top: 24%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 10%;
+    width: 13%;
   }
   .infocontainer {
     /* Background color with opacity */
@@ -2236,12 +2563,9 @@ html {
   .videoPanel img{
     width: 99%;
   }
-  #header .owl-carousel .owl-item img {
-    
-    height: 88vh;
-  }
+
   #amenitiesSection{
-    height: 1024px;
+    height: 1014px;
   }
   .masterplansection  img{
     width: 74.5%;
@@ -2271,18 +2595,26 @@ html {
 
   .projectlogo {
     position: absolute;
-    top: 24%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 10%;
+    width: 13%;
+  }
+  #parkResidency .projectlogo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 18%;
   }
   .infocontainer {
     /* Background color with opacity */
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
     width: 100%;
-    bottom: -3.5%;
+    bottom: -20.5%;
     z-index: 2;
   }
   #parkResidency #amenitiesSection {
@@ -2298,6 +2630,24 @@ html {
   #parkersuites #amenitiesSection{
     height: 80rem;
    }
+   .emailidcouloumn{
+    height: 22.596rem;
+    width: 72.308rem;
+  }
+  #whiteLillyResidencyPage #moodvideo {
+    width: 70rem;
+    height: 46rem
+  }
+  #parkersuites .projectlogo {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  #operationalbrands ul li img{
+    width: 95%;
+  }
 }
 /* / Large screens and high-resolution displays / */
 @media (min-width: 1920px) {
@@ -2341,6 +2691,7 @@ html {
   .videoPanel .row{
     width: 102%;
   }
+
   /* #gallerySection .aimidivcarousel {
     box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
     width: 33.269rem;

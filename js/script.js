@@ -1,5 +1,6 @@
 
   $(document).ready(function() {
+    
     const lightbox = GLightbox({
         touchNavigation: true, // Enable swipe gestures on touch-enabled devices
         loop: true, // Enable looping through the gallery
@@ -22,35 +23,49 @@
 
     });
 
+    $(".threetreesecondary").hover(function() {
+      $('.threetreesecondary #CommercialDropdown').css('color',"#E5B250")
+      $('.threetreesecondary #CommercialDropdown').addClass('show')
+      $('.threetreesecondary #CommercialDropdown').attr("aria-expanded", "true")
+      $('.threetreesecondary  .threetree').addClass('show')
+      $('.threetreesecondary  .threetree').attr("data-bs-popper", "static")
+      
+  }, function() {
+      $('.threetreesecondary #CommercialDropdown').css('color',"#FFFFFF")
+      $('.threetreesecondary #CommercialDropdown').removeClass('show')
+      $('.threetreesecondary #CommercialDropdown').attr("aria-expanded", "false")
+      $('.threetreesecondary  .threetree').removeClass('show')
+      $('.threetreesecondary  .threetree').attr("data-bs-popper", "")
+
+  });
 
 
-
-        // Function to hide all sections and reset button classes
-        function hideAllSectionsAndResetButtons() {
-          $(".residentialRow, .commercialRow, .plotRow").addClass("hide-section");
-          $(".residentailButton, .commercialButton, .plotButton").removeClass("button1").addClass("button2");
-        }
-      
-        // Button click event for "Residential"
-        $(".residentailButton").on("click", function() {
-          hideAllSectionsAndResetButtons();
-          $(this).removeClass("button2").addClass("button1");
-          $(".residentialRow").removeClass("hide-section");
-        });
-      
-        // Button click event for "Commercial"
-        $(".commercialButton").on("click", function() {
-          hideAllSectionsAndResetButtons();
-          $(this).removeClass("button2").addClass("button1");
-          $(".commercialRow").removeClass("hide-section");
-        });
-      
-        // Button click event for "Plot"
-        $(".plotButton").on("click", function() {
-          hideAllSectionsAndResetButtons();
-          $(this).removeClass("button2").addClass("button1");
-          $(".plotRow").removeClass("hide-section");
-        });
+      // Function to hide all sections and reset button classes
+      function hideAllSectionsAndResetButtons() {
+        $(".residentialRow, .commercialRow, .plotRow").addClass("hide-section");
+        $(".residentailButton, .commercialButton, .plotButton").removeClass("button1").addClass("button2");
+      }
+    
+      // Button click event for "Residential"
+      $(".residentailButton").on("click", function() {
+        hideAllSectionsAndResetButtons();
+        $(this).removeClass("button2").addClass("button1");
+        $(".residentialRow").removeClass("hide-section");
+      });
+    
+      // Button click event for "Commercial"
+      $(".commercialButton").on("click", function() {
+        hideAllSectionsAndResetButtons();
+        $(this).removeClass("button2").addClass("button1");
+        $(".commercialRow").removeClass("hide-section");
+      });
+    
+      // Button click event for "Plot"
+      $(".plotButton").on("click", function() {
+        hideAllSectionsAndResetButtons();
+        $(this).removeClass("button2").addClass("button1");
+        $(".plotRow").removeClass("hide-section");
+      });
 
       
       
@@ -100,8 +115,8 @@ $("#planSection .masterPlanButton").on("click", function() {
     nav:true,
     navText :false,
     dots:true,
-    // autoplay:true,
-    autoplayTimeout: 2000,
+    autoplay:true,
+    autoplayTimeout: 3500,
     responsive:{
         0:{
             items:1
@@ -146,6 +161,7 @@ $("#planSection .masterPlanButton").on("click", function() {
         ],
         dots:false,
         autoplay:true,
+        autoplayTimeout: 1500,
         responsive:{
             0:{
                 items:1
@@ -168,6 +184,7 @@ $("#planSection .masterPlanButton").on("click", function() {
         ],
         dots:false,
         autoplay:true,
+        autoplayTimeout: 1500,
         responsive:{
             0:{
                 items:1
@@ -191,6 +208,7 @@ $('.two').owlCarousel({
         ],
         dots:false,
         autoplay:true,
+        autoplayTimeout: 1500,  
         responsive:{
             0:{
                 items:1
@@ -213,6 +231,7 @@ $('.two').owlCarousel({
         ],
         dots:false,
         autoplay:true,
+        autoplayTimeout: 1500,
         responsive:{
             0:{
                 items:1
@@ -232,7 +251,7 @@ $('.overviewFirst').owlCarousel({
     nav: true, 
     rtl: true, 
     autoplay: true, 
-    autoplaySpeed: 500, 
+    autoplayTimeout: 1500, 
     responsive: {
         0: {
         items: 1 
@@ -251,7 +270,7 @@ $('.overviewSecond').owlCarousel({
     nav: true, 
     rtl: false, 
     autoplay: true, 
-    autoplaySpeed: 500, 
+    autoplayTimeout: 1500,
     responsive: {
         0: {
         items: 1 
@@ -275,8 +294,8 @@ $('.animicarousel').owlCarousel({
         '<img src="images/whitelily/rightarrow.png" alt="Previous" style="width:32px;height:21px">',
         ],
     rtl: false, 
-    autoplay: false, 
-    autoplaySpeed: 2000, 
+    autoplay: true, 
+    autoplaySpeed: 1500, 
     responsive: {
       0: {
         items: 1 
@@ -299,8 +318,8 @@ $('.animicarousel').owlCarousel({
         '<i class="fa fa-solid fa-arrow-right" style="width:32px;height:21px"></i>'
         ],
     rtl: false, 
-    autoplay: false, 
-    autoplaySpeed: 2000, 
+    autoplay: true, 
+    autoplayTimeout: 1500, 
     responsive: {
       0: {
         items: 1 
@@ -317,12 +336,12 @@ $('.animicarousel').owlCarousel({
     loop: true, 
     nav: true, 
     navText: [
-        '<img src="images/icons/leftarrow.png" alt="Previous" style="width:32px;height:21px">',
-        '<img src="images/icons/rightarrow_1.png" alt="Previous" style="width:32px;height:21px">',
+      '<i class="fa fa-solid fa-arrow-left" style="width:32px;height:21px"></i>',
+      '<i class="fa fa-solid fa-arrow-right" style="width:32px;height:21px"></i>'
         ],
     rtl: false, 
     autoplay: true, 
-    autoplaySpeed: 2000, 
+    autoplayTimeout: 1500, 
     responsive: {
         0: {
         items: 1 
@@ -340,12 +359,12 @@ $('.whitelilyresidencyunitslayout').owlCarousel({
   // loop: true, 
   nav: true, 
   navText: [
-      '<img src="images/whitelily-residency/leftarrow.jpg" alt="Previous" style="width:32px;height:21px">',
-      '<img src="images/whitelily-residency/rightarrow.jpg" alt="Previous" style="width:32px;height:21px">',
+    '<i class="fa fa-solid fa-arrow-left" style="width:32px;height:21px"></i>',
+    '<i class="fa fa-solid fa-arrow-right" style="width:32px;height:21px"></i>'
       ],
   rtl: false, 
-  // autoplay: true, 
-  // autoplaySpeed: 2000, 
+  autoplay: true, 
+  autoplayTimeout: 1500,
   responsive: {
       0: {
       items: 1 
@@ -466,3 +485,20 @@ function hideAllSectionsAndResetButtons() {
   
 
       
+
+
+
+
+  // ENQUIRY CLICK
+
+
+   // Show the popup when the "Enquire Now" button is clicked
+   $('.enquirynowbtn').click(function() {
+    $('.popup').fadeIn();
+  });
+
+  // Hide the popup when the "Close" icon is clicked
+  $('.closeenquirypopup').click(function() {
+    $('.popup').fadeOut();
+  });
+
