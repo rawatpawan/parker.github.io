@@ -2407,6 +2407,22 @@ transition: all 0.5s linear;
 .timelineimg{
   width: 80%;
 }
+.popup input{
+  margin-left: 0px !important;
+}
+.popup label{
+  margin-left: 0px !important;
+}
+
+#contactusform input{
+  margin-left: 0px !important;
+}
+#contactusform label{
+  margin-left: 0px !important;
+}
+#contactusform{
+  padding: 3rem;
+}
 }
 
  /* Tablets in portrait mode / */
@@ -2478,6 +2494,22 @@ transition: all 0.5s linear;
   }
   .timelineimg{
     width: 80%;
+  }
+  .popup input{
+    margin-left: 0px !important;
+  }
+  .popup label{
+    margin-left: 0px !important;
+  }
+  
+  #contactusform input{
+    margin-left: 0px !important;
+  }
+  #contactusform label{
+    margin-left: 0px !important;
+  }
+  #contactusform{
+    padding: 3rem;
   }
 }
 /* / Tablets in landscape mode and small desktops / */
