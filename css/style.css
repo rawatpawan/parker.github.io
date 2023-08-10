@@ -2546,14 +2546,7 @@ transition: all 0.5s linear;
     z-index: 2;
     width: 13%;
   }
-  .infocontainer {
-    /* Background color with opacity */
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    width: 100%;
-    bottom: -0.5%;
-    z-index: 2;
-  }
+
   #parkResidency #amenitiesSection{
     height: 75rem;
   }
@@ -2641,14 +2634,7 @@ html {
     z-index: 2;
     width: 18%;
   }
-  .infocontainer {
-    /* Background color with opacity */
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    width: 100%;
-    bottom: -20.5%;
-    z-index: 2;
-  }
+
   #parkResidency #amenitiesSection {
     background: url(../images/park-residency/amenities.png);
     height: 75rem;
