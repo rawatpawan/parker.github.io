@@ -116,7 +116,7 @@ $("#planSection .masterPlanButton").on("click", function() {
     navText :false,
     dots:true,
     autoplay:true,
-    autoplayTimeout: 3500,
+    autoplayTimeout: 4000,
     responsive:{
         0:{
             items:1
@@ -251,7 +251,7 @@ $('.overviewFirst').owlCarousel({
     nav: true, 
     rtl: true, 
     autoplay: true, 
-    autoplayTimeout: 1500, 
+    autoplayTimeout: 2500, 
     responsive: {
         0: {
         items: 1 
@@ -270,7 +270,7 @@ $('.overviewSecond').owlCarousel({
     nav: true, 
     rtl: false, 
     autoplay: true, 
-    autoplayTimeout: 1500,
+    autoplayTimeout: 2500,
     responsive: {
         0: {
         items: 1 
@@ -341,7 +341,7 @@ $('.animicarousel').owlCarousel({
         ],
     rtl: false, 
     autoplay: true, 
-    autoplayTimeout: 1500, 
+    autoplayTimeout: 3000, 
     responsive: {
         0: {
         items: 1 
@@ -356,7 +356,7 @@ $('.animicarousel').owlCarousel({
 });
 $('.whitelilyresidencyunitslayout').owlCarousel({
   items: 4, 
-  // loop: true, 
+  loop: true, 
   nav: true, 
   navText: [
     '<i class="fa fa-solid fa-arrow-left" style="width:32px;height:21px"></i>',
@@ -364,7 +364,7 @@ $('.whitelilyresidencyunitslayout').owlCarousel({
       ],
   rtl: false, 
   autoplay: true, 
-  autoplayTimeout: 1500,
+  autoplayTimeout: 3500,
   responsive: {
       0: {
       items: 1 
@@ -379,15 +379,15 @@ $('.whitelilyresidencyunitslayout').owlCarousel({
 });
 $('.barrestrocarousel').owlCarousel({
   items: 4, 
-  // loop: true, 
+  loop: true, 
   nav: true, 
   navText: [
     '<i class="fa fa-solid fa-arrow-left" style="width:32px;height:21px"></i>',
     '<i class="fa fa-solid fa-arrow-right" style="width:32px;height:21px"></i>'
       ],
   rtl: false, 
-  // autoplay: true, 
-  // autoplaySpeed: 2000, 
+  autoplay: true, 
+  autoplayTimeout: 2500, 
   responsive: {
       0: {
       items: 1 
@@ -493,7 +493,7 @@ function hideAllSectionsAndResetButtons() {
 
 
    // Show the popup when the "Enquire Now" button is clicked
-   $('.enquirynowbtn').click(function() {
+   $('.openenquiry').click(function() {
     $('.popup').fadeIn();
   });
 

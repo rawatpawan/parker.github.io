@@ -385,7 +385,7 @@ section {
   content: '';
   position: absolute;
   top: -14%;
-  left: 70%;
+  left: 45%;
   border-bottom: 1rem solid var(--background-color);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
@@ -433,7 +433,7 @@ section {
   content: '';
   position: absolute;
   top: -14%;
-  left: 41%;
+  left: 35%;
   border-bottom: 1rem solid var(--background-color);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
@@ -446,7 +446,7 @@ section {
   content: '';
   position: absolute;
   top: -14%;
-  left: 56%;
+  left: 48%;
   border-bottom: 1rem solid var(--background-color);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
@@ -459,7 +459,7 @@ section {
   content: '';
   position: absolute;
   top: -14%;
-  left: 67%;
+  left: 60%;
   border-bottom: 1rem solid var(--background-color);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
@@ -1105,7 +1105,7 @@ section {
 #header .first .item img {
   width: 100%;
   height: auto;
-  animation: kenBurns 3.5s infinite alternate;
+  animation: kenBurns 5s infinite alternate;
 }
 
 @keyframes kenBurns {
@@ -1127,7 +1127,7 @@ section {
 
 .projectlogo {
   position: absolute;
-  top: 22%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -1241,10 +1241,10 @@ section {
 
 
 #amenitiesSection{
-  background: url(../images/whitelily/amenities1.png);
-  height: 123.077rem;
-  background-position: center;
-  background-size: contain;
+  background: url(../images/whitelily/amenities.png);
+  /* height: 123.077rem; */
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -1260,20 +1260,25 @@ section {
 }
 
 .animitieul{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-items: center;
+  gap: 0;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
 }
 .animitieul li {
-  margin: 1rem 2rem;
+  margin: 1rem 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .animitieul li img{
-  height: 10.962rem;
-  width: 10.962rem;
+  height: 10.962rem !important;
+  width: 10.962rem !important;
 }
 .animitieul li p{
   font-size: 1.442rem;
@@ -1281,8 +1286,14 @@ section {
   font-weight: 700;
   line-height: auto;
   margin-top: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 150%;
 }
-
+#locationSection .animitieul{
+  display: flex;
+  justify-content: center;
+}
  /*** New added amenities style end **/
 
 
@@ -1517,14 +1528,14 @@ section {
 
 #whiteLillyResidencyPage .projectlogo {
   position: absolute;
-  top: 30%;
+  top: 12%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
 #parkersuites .projectlogo {
   position: absolute;
-  top: 25%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -1546,11 +1557,30 @@ section {
 
 #whiteLillyResidencyPage #amenitiesSection{
   background: url(../images/whitelily-residency/amenities.png);
-  background-position: center;
-  background-size: contain;
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
-
+#whiteLillyResidencyPage .animitieul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  gap: 0;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
+}
+#parkersuites .animitieul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  gap: 0;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
+}
 #whiteLillyResidencyPage .aminitesslider{
   background: url(../images/whitelily-residency/animitiebackground.png);
 }
@@ -1649,9 +1679,9 @@ section {
 
 #parkResidency #amenitiesSection {
   background: url(../images/park-residency/amenities.png);
-  height: 80.0962rem;
-  background-position: center;
-  background-size: contain;
+  /* height: 80.0962rem; */
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 #parkResidency .whiteLillyResidencyanimicarousel .owl-nav button.owl-prev i,
@@ -1823,6 +1853,9 @@ transition: all 0.5s linear;
     padding: 4rem 2rem;
     margin: 1rem;
 }
+#belowoperationalbrands img{
+  width: 10%;
+}
 /************************************************ Park City Centre Page End ***************************************/
 
 
@@ -1858,9 +1891,9 @@ transition: all 0.5s linear;
 }
 #parkersuites #amenitiesSection {
   background: url(../images/parker-suites/animities.jpg);
-  height: 85.57rem;
-  background-position: center;
-  background-size: contain;
+  /* height: 85.57rem; */
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 #parkersuites .aminitesslider{
@@ -2312,10 +2345,38 @@ transition: all 0.5s linear;
   .limite{
     display: none;
   }
-  
-  #amenitiesSection{
-    height: 37.077rem;
+  .animitieul {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
   }
+  #whiteLillyResidencyPage .animitieul {
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+  #parkersuites .animitieul {
+    grid-template-columns: repeat(4, 1fr);
+
+  }
+  #locationSection .animitieul{
+    
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  #locationSection .animitieul li img {
+    height: 6rem !important;
+    width: 6rem !important;
+  }
+  #locationSection .animitieul li p{
+    font-size: 1rem;
+  }
+  .animitieul li{
+    margin: 0;
+  }
+  /* #amenitiesSection{
+    height: 37.077rem;
+  } */
   .downloadbrochurediv img{
     width: 60%;
   }
@@ -2333,18 +2394,18 @@ transition: all 0.5s linear;
     height: 46.154rem;
   }
 
-  #parkResidency #amenitiesSection{
+  /* #parkResidency #amenitiesSection{
     height: 25rem;
-  }
+  } */
   .infocontainer{
     display: none;
   }
   .projectlogo{
     display: none;
   }
-  #whiteLillyResidencyPage #amenitiesSection {
+  /* #whiteLillyResidencyPage #amenitiesSection {
     height: 38rem;
-  }
+  } */
   .parkresidencytable  img{
     width: 60%;
   }
@@ -2372,9 +2433,9 @@ transition: all 0.5s linear;
  #belowoperationalbrands img{
   width: 10%;
  }
- #parkersuites #amenitiesSection{
+ /* #parkersuites #amenitiesSection{
   height: 25.3rem;
- }
+ } */
  .aboutusheader h1{
   color: #ffffff;
   text-align: center;
@@ -2477,9 +2538,9 @@ transition: all 0.5s linear;
   .parkresidencytable  img{
     width: 30%;
   }
-  #parkersuites #amenitiesSection{
+  /* #parkersuites #amenitiesSection{
     height: 50.3rem;
-   }
+   } */
    #aboutus .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -2526,9 +2587,9 @@ transition: all 0.5s linear;
   .two .owl-item{
     margin: auto 0.673rem  !important ;
   }
-  #amenitiesSection{
+  /* #amenitiesSection{
     height: 906px;
-  }
+  } */
   .masterplansection  img{
     width: 72%;
   }
@@ -2540,22 +2601,22 @@ transition: all 0.5s linear;
   }
   .projectlogo {
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 13%;
   }
 
-  #parkResidency #amenitiesSection{
+  /* #parkResidency #amenitiesSection{
     height: 75rem;
-  }
+  } */
   .parkresidencytable  img{
     width: 30%;
   }
-  #parkersuites #amenitiesSection{
+  /* #parkersuites #amenitiesSection{
     height: 78.5rem;
-   }
+   } */
 }
 /* / Standard desktops and laptops / */
 @media (min-width: 1400px) and (max-width: 1919px) {
@@ -2589,9 +2650,9 @@ html {
     width: 99%;
   }
 
-  #amenitiesSection{
+  /* #amenitiesSection{
     height: 1014px;
-  }
+  } */
   .masterplansection  img{
     width: 74.5%;
   }
@@ -2620,7 +2681,7 @@ html {
 
   .projectlogo {
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -2628,7 +2689,7 @@ html {
   }
   #parkResidency .projectlogo {
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -2637,17 +2698,17 @@ html {
 
   #parkResidency #amenitiesSection {
     background: url(../images/park-residency/amenities.png);
-    height: 75rem;
-    background-position: center;
-    background-size: contain;
+    /* height: 75rem; */
+    background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .parkresidencytable  img{
     width: 30%;
   }
-  #parkersuites #amenitiesSection{
+  /* #parkersuites #amenitiesSection{
     height: 80rem;
-   }
+   } */
    .emailidcouloumn{
     height: 22.596rem;
     width: 72.308rem;
@@ -2658,7 +2719,7 @@ html {
   }
   #parkersuites .projectlogo {
     position: absolute;
-    top: 30%;
+    top: 12%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
