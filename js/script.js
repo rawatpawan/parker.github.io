@@ -484,9 +484,34 @@ function hideAllSectionsAndResetButtons() {
   });
   
 
-      
+  // HOme page video toggle section 
 
 
+  function hideAllSectionsAndResetButtons2() {
+    $(".videoImagefirston, .videoImagesecondon, .videoImagethreeon, .videoImagefouron").addClass("hide-section");
+  }
+  
+  // // Initially hide all sections except the first one
+  // $(".highriselayoutsection, .lowriselayoutsection").addClass("hide-section");
+  
+  // Button click event for "MASTER PLAN"
+  $(".videoImagefirst").on("click", function() {
+    alert 
+    hideAllSectionsAndResetButtons2();
+    $(".videoImagefirston").removeClass("hide-section");
+  });
+  $(".videoImagesecond").on("click", function() {
+    hideAllSectionsAndResetButtons2();
+    $(".videoImagesecondon").removeClass("hide-section");
+  });
+  $(".videoImagethree").on("click", function() {
+    hideAllSectionsAndResetButtons2();
+    $(".videoImagethreeon").removeClass("hide-section");
+  });
+  $(".videoImagefour").on("click", function() {
+    hideAllSectionsAndResetButtons2();
+    $(".videoImagefouron").removeClass("hide-section");
+  });
 
 
   // ENQUIRY CLICK
