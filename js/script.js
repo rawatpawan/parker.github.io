@@ -199,8 +199,9 @@ $("#planSection .masterPlanButton").on("click", function() {
     })
 
 $('.two').owlCarousel({
-        // loop:false,
-        // margin:46,
+        loop:true,
+        items: 5,
+        margin:30,
         nav: true,
         navText: [
         '<img src="images/icons/leftangel.png" alt="Previous" style="width:2rem;height:3.8rem">',
@@ -210,15 +211,12 @@ $('.two').owlCarousel({
         autoplay:true,
         autoplayTimeout: 1500,  
         responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:1
-            },
-            1000:{
-                items:6
-            }
+          0: {
+            items: 2 
+          },
+          768: {
+              items: 5 
+          }
         }
     })
     $('.banner_banks').owlCarousel({
