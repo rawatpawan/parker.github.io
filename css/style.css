@@ -635,6 +635,21 @@ section {
   width:18.58rem;
   height:5.7rem;
 }
+.viewall{
+  background-color: var(--primary-button-background);
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 120%;
+  width:18.58rem;
+  height:5.7rem;
+  transition: all 0.3s linear;
+}
+.viewall:hover{
+  background-color: var(--main-color);
+  color: #ffffff;
+}
 .button3{
   background-color: #8B0044;
   color: #ffffff;
@@ -2002,9 +2017,9 @@ transition: all 0.5s linear;
 }
 
 .innervismis .discription{
-  padding-left: 4rem;
-  padding-right: 4rem;
-  padding-bottom: 4em;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
 }
 #brandvalue{
      background-color: var(--primry-color);
@@ -2013,7 +2028,7 @@ transition: all 0.5s linear;
 }
 .brandcol{
   background: #00377b;
-  padding: 4rem;
+  padding: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2034,6 +2049,7 @@ transition: all 0.5s linear;
   overflow: hidden; 
   position: relative; 
   transition: transform 0.3s ease; 
+  width: 49%;
 }
 
 .innervismis:hover {
@@ -2047,7 +2063,7 @@ transition: all 0.5s linear;
 
 .vismis {
   display: flex;
-  justify-content: space-evenly; 
+  justify-content: space-between; 
   align-items: stretch;
 }
 .innervismis:hover img {
@@ -2172,6 +2188,7 @@ transition: all 0.5s linear;
   color: #00377b;
   font-weight: 700;
   text-transform: capitalize;
+  text-align: left;
 }
 .firstenquiryrow .col-3{
   display: flex;
