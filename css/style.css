@@ -577,7 +577,7 @@ section {
 
 .two .owl-item, .two .item{
   /* width: 21.346rem!important; */
-  height: 28.75rem;
+  height: 30.75rem;
  
 
 }
@@ -1105,7 +1105,11 @@ section {
   right: 2%;
   bottom: 5%;
   transform: translateY(-50%);
+  width: 5%;
   animation: rotate 2s linear infinite;
+}
+.chatbot:hover {
+  animation-play-state: paused;
 }
 @keyframes rotate {
   0% {

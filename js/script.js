@@ -117,6 +117,7 @@ $("#planSection .masterPlanButton").on("click", function() {
     dots:true,
     autoplay:true,
     autoplayTimeout: 4000,
+    smartSpeed: 1000, 
     responsive:{
         0:{
             items:1
@@ -139,6 +140,8 @@ $("#planSection .masterPlanButton").on("click", function() {
         ],
         dots:false,
         autoplay:true,
+        smartSpeed: 1000, 
+        smartSpeed: 1000,
         responsive:{
             0:{
                 items:1
@@ -162,6 +165,7 @@ $("#planSection .masterPlanButton").on("click", function() {
         dots:false,
         autoplay:true,
         autoplayTimeout: 1500,
+        smartSpeed: 1000, 
         responsive:{
             0:{
                 items:1
@@ -185,6 +189,7 @@ $("#planSection .masterPlanButton").on("click", function() {
         dots:false,
         autoplay:true,
         autoplayTimeout: 1500,
+        smartSpeed: 1000, 
         responsive:{
             0:{
                 items:1
@@ -210,6 +215,7 @@ $('.two').owlCarousel({
         dots:false,
         autoplay:true,
         autoplayTimeout: 1500,  
+        smartSpeed: 1000,
         responsive:{
           0: {
             items: 2 
@@ -230,6 +236,7 @@ $('.two').owlCarousel({
         dots:false,
         autoplay:true,
         autoplayTimeout: 1500,
+        smartSpeed: 1000,
         responsive:{
             0:{
                 items:1
@@ -249,7 +256,8 @@ $('.overviewFirst').owlCarousel({
     nav: true, 
     rtl: true, 
     autoplay: true, 
-    autoplayTimeout: 2500, 
+    autoplayTimeout: 3000, 
+    smartSpeed: 1000,
     responsive: {
         0: {
         items: 1 
@@ -268,7 +276,8 @@ $('.overviewSecond').owlCarousel({
     nav: true, 
     rtl: false, 
     autoplay: true, 
-    autoplayTimeout: 2500,
+    autoplayTimeout: 3000,
+    smartSpeed: 1000,
     responsive: {
         0: {
         items: 1 
@@ -294,6 +303,7 @@ $('.animicarousel').owlCarousel({
     rtl: false, 
     autoplay: true, 
     autoplaySpeed: 1500, 
+    smartSpeed: 1000,
     responsive: {
       0: {
         items: 1 
@@ -318,6 +328,7 @@ $('.animicarousel').owlCarousel({
     rtl: false, 
     autoplay: true, 
     autoplayTimeout: 1500, 
+    smartSpeed: 1000,
     responsive: {
       0: {
         items: 1 
@@ -338,8 +349,9 @@ $('.animicarousel').owlCarousel({
       '<i class="fa fa-solid fa-arrow-right" style="width:32px;height:21px"></i>'
         ],
     rtl: false, 
-    autoplay: true, 
+    autoplay: false, 
     autoplayTimeout: 3000, 
+    smartSpeed: 1000,
     responsive: {
         0: {
         items: 1 
@@ -361,8 +373,9 @@ $('.whitelilyresidencyunitslayout').owlCarousel({
     '<i class="fa fa-solid fa-arrow-right" style="width:32px;height:21px"></i>'
       ],
   rtl: false, 
-  autoplay: true, 
+  autoplay: false, 
   autoplayTimeout: 3500,
+  smartSpeed: 1000,
   responsive: {
       0: {
       items: 1 
@@ -386,6 +399,7 @@ $('.barrestrocarousel').owlCarousel({
   rtl: false, 
   autoplay: true, 
   autoplayTimeout: 2500, 
+  smartSpeed: 1000,
   responsive: {
       0: {
       items: 1 
@@ -412,6 +426,7 @@ $('.residentialRowCarousel').owlCarousel({
     dots: false,
     autoplay: true,
     autoplaySpeed: 500,
+    smartSpeed: 1000,
     responsive: {
       0: {
         items: 1
