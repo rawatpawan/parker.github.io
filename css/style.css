@@ -1054,7 +1054,7 @@ section {
   border: 1px solid var(--primry-color);
   border-radius: 1px;
   width: 26.537rem!important;
-  height: 12.261rem;
+  height: 10.261rem;
   margin: auto 0.962rem;
 }
 .banner_banks .owl-stage{
@@ -1062,7 +1062,7 @@ section {
   justify-content: center;
 }
 .banner_banks .item{
-  padding: 2.5rem 4rem;
+  padding: 0;
   display: flex;
   align-items:center;
   justify-content: center;
@@ -1070,23 +1070,23 @@ section {
   height: 100%;
 }
 .item1 img{
-  width: 15.288rem!important;
-  height: 5.288rem;
+  width: 14.288rem!important;
+  height: 4.288rem;
 }
 .item2 img{
-  width: 21.714rem!important;
+  width: 19.714rem!important;
   height: 5.143rem;
 }
 .item3 img{
-  width: 22.019rem!important;
+  width: 20.019rem!important;
   height: 4.615rem;
 }
 .item4 img{
-  width: 23.269rem!important;
+  width: 21.269rem!important;
   height: 3.846rem;
 }
 .item5 img{
-  width: 21.058rem!important;
+  width: 19.058rem!important;
   height: 7.5rem;
 }
 
