@@ -1119,7 +1119,21 @@ section {
     transform: rotate(360deg);
   }
 }
-
+.callpopup{
+  position: fixed;
+  z-index: 2;
+  right: 8%;
+  bottom: 0%;
+  transform: translateY(-50%);
+  width: 5%;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  
+}
+.callpopup img{
+  width: 100%;
+}
 /************************************************* Home Page End********************************************/
 
 
@@ -2093,6 +2107,26 @@ transition: all 0.5s linear;
   height: 100vh;
   z-index: 1000;
 }
+.callpopupdiv {
+  background: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack icon and image vertically */
+}
+
+.closecallpopupdiv {
+  position: absolute;
+  top: 18%;
+  right: 22%;
+
+}
 
 .popup-content {
   position: fixed;
@@ -2779,6 +2813,12 @@ html {
   }
   #operationalbrands ul li img{
     width: 95%;
+  }
+  .closecallpopupdiv {
+    position: absolute;
+    top: 15%;
+    right: 22%;
+  
   }
 }
 /* / Large screens and high-resolution displays / */

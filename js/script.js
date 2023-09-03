@@ -540,3 +540,14 @@ function hideAllSectionsAndResetButtons() {
     $('.popup').fadeOut();
   });
 
+// contact details popup
+
+
+$('.callpopup').click(function() {
+  $('.callpopupdiv').removeClass('hide-section');
+});
+
+// Hide the popup when the "Close" icon is clicked
+$('.closecallpopupdiv').click(function() {
+  $('.callpopupdiv').addClass('hide-section');
+});
