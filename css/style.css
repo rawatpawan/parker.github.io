@@ -1310,6 +1310,16 @@ section {
   width: 90%;
   margin: 0 auto;
 }
+#whiteLillyPage .animitieul{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  gap: 0;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  margin: 0 auto;
+}
 .animitieul li {
   margin: 1rem 2.5rem;
   display: flex;
@@ -1674,9 +1684,11 @@ section {
 }
 
 .faciltyheading{
-  font-size: 5.962rem;
-  font-weight: 700;
-  color: var(--primary-button-background);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--primary-button-background);
+    text-transform: uppercase;
+    text-align: center
 
 }
 
@@ -1861,7 +1873,7 @@ transition: all 0.5s linear;
 }
 
 #belowoperationalbrands{
-  background: #023f88;
+  background: url('../images/city-centre/belowoperationalbrands.jpg');
 }
 #belowoperationalbrands h5{
 
