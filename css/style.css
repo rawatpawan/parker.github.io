@@ -2706,7 +2706,7 @@ transition: all 0.5s linear;
     width: 88%;
   }
   .downloadbrochurediv img{
-    width: 15%;
+    width: 45%;
   }
   .projectlogo {
     position: absolute;
@@ -2759,7 +2759,7 @@ html {
     width: 87.5%;
   }
   .downloadbrochurediv img{
-    width: 15%;
+    width: 45%;
   }
   #locationSection iframe {
     height: 59.615rem;
