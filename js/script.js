@@ -95,6 +95,53 @@ $("#planSection .masterPlanButton").on("click", function() {
 
 });
 
+
+// Mobile Navigation bar 
+
+$(document).ready(function() {
+
+  // Get all dropdown toggle elements
+  const dropdownToggleElements = document.querySelectorAll('.mobileMenu .nav-item.dropdown .nav-link.dropdown-toggle');
+  
+  // Add a click event listener to each dropdown toggle
+  dropdownToggleElements.forEach((toggle) => {
+    toggle.addEventListener('click', (e) => {
+      // Prevent the default behavior (closing dropdown)
+      e.preventDefault();
+      e.stopPropagation();
+  
+      // Toggle the 'show' class on the dropdown menu
+      const dropdownMenu = toggle.nextElementSibling;
+      if (dropdownMenu) {
+        dropdownMenu.classList.toggle('show');
+      }
+    });
+  });
+  
+  // Close dropdowns when clicking outside
+  document.addEventListener('click', (e) => {
+    dropdownToggleElements.forEach((toggle) => {
+      // Close dropdowns that are not the target of the click
+      if (toggle !== e.target) {
+        const dropdownMenu = toggle.nextElementSibling;
+        if (dropdownMenu && dropdownMenu.classList.contains('show')) {
+          dropdownMenu.classList.remove('show');
+        }
+      }
+    });
+  });
+  
+  });
+  
+  
+
+
+
+
+
+
+
+
   $('[data-toggle="slide-collapse"]').on('click', function() {
     $navMenuCont = $($(this).data('target'));
     $navMenuCont.animate({
@@ -551,3 +598,6 @@ $('.callpopup').click(function() {
 $('.closecallpopupdiv').click(function() {
   $('.callpopupdiv').addClass('hide-section');
 });
+
+
+
