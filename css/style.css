@@ -441,7 +441,7 @@ section {
   content: '';
   position: absolute;
   top: -14%;
-  left: 35%;
+  left: 25%;
   border-bottom: 1rem solid var(--background-color);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
@@ -454,7 +454,7 @@ section {
   content: '';
   position: absolute;
   top: -14%;
-  left: 48%;
+  left: 45%;
   border-bottom: 1rem solid var(--background-color);
   border-left: 1rem solid transparent;
   border-right: 1rem solid transparent;
@@ -2272,6 +2272,11 @@ transition: all 0.5s linear;
   background: #f1f2f2;
 }
 #contactusform label{
+  font-size: 1.8rem;
+  
+  margin-top: 1rem !important;
+}
+#contactusform option{
   font-size: 1.8rem;
   
   margin-top: 1rem !important;
