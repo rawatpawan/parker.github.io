@@ -2343,6 +2343,75 @@ transition: all 0.5s linear;
 /************************************************ Construction Page End ***************************************/
 
 
+/************************************************ Management talk Page Start ***************************************/
+
+.managementTalkheader {
+  position: relative;
+  overflow: hidden;
+  height: 87.9630vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.kenburns-bgmanagement {
+  background: url('../images/managementTalk.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* animation: kenBurns 10s infinite alternate; */
+}
+
+@keyframes kenBurns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.kenburns-bgmanagement img{
+  width: 10%;
+  display: block;
+  margin-top: 4rem;
+}
+
+.managementTalkShadowDiv{
+  background: #fff;
+  margin-left: -10rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.managementTalkShadowDiv h2{
+  text-transform: uppercase;
+  color: #00377b;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+.managementTalkShadowDiv2{
+  background: #fff;
+  margin-right: -10rem;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.managementTalkShadowDiv2 h2{
+  text-transform: uppercase;
+  color: #00377b;
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+/************************************************ Management talk Page End ***************************************/
+
+
 
 
 /*************************************responsive website layout start  ***************************************/
@@ -2604,6 +2673,9 @@ transition: all 0.5s linear;
 #contactusform{
   padding: 3rem;
 }
+.managementTalkShadowDiv {
+  margin: auto;
+}
 }
 
  /* Tablets in portrait mode / */
@@ -2691,6 +2763,12 @@ transition: all 0.5s linear;
   }
   #contactusform{
     padding: 3rem;
+  }
+  .managementTalkShadowDiv {
+    margin: auto;
+  }
+  .managementTalkShadowDiv2 {
+    margin: auto;
   }
 }
 /* / Tablets in landscape mode and small desktops / */
