@@ -2461,6 +2461,17 @@ transition: all 0.5s linear;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
+
+#privacyPolicy ul li{
+  list-style-type: disc;
+  font-size: 1.923rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: #000000;
+  letter-spacing: 0px;
+  margin: 1rem auto;
+}
+
 /************************************************ Career Page End ***************************************/
 
 
