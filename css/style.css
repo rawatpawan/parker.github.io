@@ -249,6 +249,14 @@ section {
   font-size: 3rem; /* Adjust the desired size */
   color: #00234c; /* Adjust the desired color */
 }
+
+
+#javierManagement .owl-carousel  .owl-nav button.owl-prev i,
+#javierManagement .owl-carousel  .owl-nav button.owl-next i {
+  font-size: 3rem; /* Adjust the desired size */
+  color: #00234c; /* Adjust the desired color */
+}
+
 .card {
   /* box-shadow: 0 5px 8px rgba(0,0,0,0.3); */
   border: none;
@@ -2448,6 +2456,7 @@ transition: all 0.5s linear;
   background-color: #e5b250;
   background-image: url(../images/background.jpg);
   background-blend-mode: multiply;
+  padding: 80px 0;
 }
 .resumeform {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -2462,7 +2471,7 @@ transition: all 0.5s linear;
   font-size: 2rem;
 }
 
-#privacyPolicy ul li{
+#privacyPolicy, #termandcondition ul li{
   list-style-type: disc;
   font-size: 1.923rem;
   line-height: 150%;
@@ -2472,7 +2481,148 @@ transition: all 0.5s linear;
   margin: 1rem auto;
 }
 
+
+.board-tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #b4b5b5;
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.board-tab a{
+  color: #b4b5b5;
+  font-weight: 700;
+  font-size: 2.805rem;
+  padding-bottom: 1rem;
+}
+.board-tab .borderactive {
+   color: var(--main-color);
+  border-bottom: 4px solid var(--primry-color);;
+}
+.carrericondiv{
+  margin-top: 7rem;
+}
+
+.carrericondiv img{
+  width: 50%;
+}
+.carrericondiv p{
+  color: #00377b;
+  font-size: 2.243rem;
+  line-height: 2.997rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.carrericondiv .colm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
 /************************************************ Career Page End ***************************************/
+
+
+
+/************************************************ Javier Management start ***************************************/
+
+#javierManagement #header .owl-dots{
+  display: none;
+}
+.threediv {
+  display: flex;
+    justify-content: center;
+}
+.threediv ul{
+  margin-top: 5rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.threediv ul li{
+  padding: 5rem 7rem;
+  background: #19225f;
+  border: 3px solid #3d863d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.threediv ul li h4{
+  color: #fff;
+  font-weight: 700;
+  font-size: 4.808rem;
+  line-height: 2.885rem;
+}
+.threediv ul li p{
+  color: #fff;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1.923rem;
+  line-height: 2.885rem;
+}
+.javierservice{
+  background-color: #19225f;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  padding: 5rem 0;
+  margin-top: -15rem;
+}
+
+.javierservice h2{
+  color: #ffffff;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 4.007rem;
+  font-weight: 500;
+}
+.javierservice img{
+  width: 35%;
+}
+.javierservice p{
+  color: #ffffff;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2.695rem;
+  font-weight: 700;
+}
+.javierservice .col-md-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+.belowjavierservice{
+  background-color: #3d863d;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  padding: 2rem 0;
+
+}
+
+.belowjavierservice p{
+  color: #ffffff;
+  font-size: 5.042rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+#javierManagement  .owl-stage-outer{
+  padding-bottom: 5rem !important;
+}
+
+/************************************************ Javier Management End ***************************************/
+
 
 
 /*************************************responsive website layout start  ***************************************/
@@ -2737,6 +2887,9 @@ transition: all 0.5s linear;
 .managementTalkShadowDiv {
   margin: auto;
 }
+.threediv ul {
+  flex-direction: column;
+}
 }
 
  /* Tablets in portrait mode / */
@@ -2830,6 +2983,9 @@ transition: all 0.5s linear;
   }
   .managementTalkShadowDiv2 {
     margin: auto;
+  }
+  .threediv ul {
+    flex-direction: column;
   }
 }
 /* / Tablets in landscape mode and small desktops / */
