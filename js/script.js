@@ -601,3 +601,21 @@ $('.closecallpopupdiv').click(function() {
 
 
 
+$('.aboveShow').click(function(){
+  $('.commonshow').hide();
+
+  $('.aboveShow').each(function () {
+    if ($(this).attr('data-show') === '1') {
+      $(this).css('margin-bottom', '2rem');
+      $(this).find('.innersectionwork').css('padding-bottom', '0.5rem');
+    }
+  });
+  var dataValue = $(this).attr('data');
+  var className = 'above'+dataValue;
+  $(this).css('margin-bottom','0px');
+  $(this).find('.innersectionwork').css('padding-bottom', '3rem');
+  $(this).attr('data-show','1');
+  $('.'+className).fadeIn();
+});
+
+

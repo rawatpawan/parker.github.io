@@ -2617,11 +2617,135 @@ transition: all 0.5s linear;
   text-align: center;
 }
 
-#javierManagement  .owl-stage-outer{
+#javierManagement .whiteLillyResidencyanimicarousel .owl-stage-outer{
   padding-bottom: 5rem !important;
 }
 
 /************************************************ Javier Management End ***************************************/
+
+
+/************************************************ Parker Construction Start ***************************************/
+
+#parkerconstruction #header .owl-dots{
+  display: none;
+}
+
+#parkerconstruction .bannerheading{
+  color: #ffffff;
+    text-align: center;
+    font-size: 3.778rem;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-shadow: 0px 0px 7.2px rgba(43, 53, 78, 0.5);
+}
+
+#parkerconstruction .whiteLillyResidencyanimicarousel .owl-stage-outer{
+  padding-bottom: 5rem !important;
+}
+
+
+#constructionsecond{
+  background: url('../images/parkerconstruction/second.png');
+}
+
+#constructionsecond .innersecond{
+  background: var(--main-color);
+  border: 1px solid #e5b250;
+  padding: 2rem;
+  height: 17.115rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+#constructionsecond .innersecond h6{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 4.808rem !important;
+  text-align: center;
+}
+
+#constructionsecond .innersecond p{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.923rem !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+#constructionthird{
+
+  padding: 20px 0;
+  background: url('../images/parkerconstruction/third.png');
+}
+#constructionthird .innerwork{
+    margin-bottom: 2rem;
+    cursor: pointer;
+   
+}
+#constructionthird .innerwork img{
+    height: 24rem;
+    width: 100%;
+}
+#constructionthird .innersectionwork{
+  padding: .5rem;
+  background: var(--main-color);
+}
+#constructionthird .innersectionwork p{
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 3.205rem;
+  font-weight: 500;
+}
+
+
+#constructionfour{
+
+  padding: 20px 0;
+  background: url('../images/parkerconstruction/four.jpg');
+}
+#constructionfour .innerwork{
+    margin-bottom: 2rem;
+   
+}
+#constructionfour .innerwork img{
+    height: 24rem;
+    width: 100%;
+}
+#constructionfour .innersectionwork{
+  padding: .5rem;
+  background: var(--main-color);
+}
+#constructionfour .innersectionwork p{
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 3.205rem;
+  font-weight: 500;
+}
+
+
+.commonshow{
+  padding: 2rem !important;
+  background: var(--main-color);
+  margin-top: 0px;
+  margin-bottom: 2rem;
+
+}
+.commonshow p{
+  color: #fff;
+}
+
+
+
+/************************************************ Parker Construction End ***************************************/
+
+
 
 
 
@@ -2632,506 +2756,580 @@ transition: all 0.5s linear;
  /* Small screens, such as smartphones / */
 @media (max-width: 767px) {
 
-  html {
-    font-size: 45%;
-  }
-  .owl-carousel .owl-dots {
-    display: none;
-  }
-  .card{
-    width: 100%;
-    border: none;
-  }
-  #section8 .owl-carousel .item .card-img-top {
-    height: 45rem;
-    object-fit: cover;
-  }
-  
-  .owl-carousel .owl-nav button.owl-prev {
-  display: none;
-  }
-  .owl-carousel .owl-nav button.owl-next {
-    display: none;
-  }
-  #section2 .owl-carousel .item{
-    width: 100%;
-    height: 100%;
-  }
+      html {
+        font-size: 45%;
+      }
+      .owl-carousel .owl-dots {
+        display: none;
+      }
+      .card{
+        width: 100%;
+        border: none;
+      }
+      #section8 .owl-carousel .item .card-img-top {
+        height: 45rem;
+        object-fit: cover;
+      }
+      
+      .owl-carousel .owl-nav button.owl-prev {
+      display: none;
+      }
+      .owl-carousel .owl-nav button.owl-next {
+        display: none;
+      }
+      #section2 .owl-carousel .item{
+        width: 100%;
+        height: 100%;
+      }
 
-  .desktopMenu {
-    display: none;
-  }
-  #slide-navbar-collapse {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    width: 80%;
-    height: 100%;
-    background-color: var(--background-color);
-    overflow: auto;
-  }
-  .menu-overlay {
-    display: none;
-    background-color: #000;
-    bottom: 0;
-    left: 0;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-    /* IE7 & 8 */
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 49;
-  }
-  .videoPanel img{
-    width: 99%;
-  }
-  .residentialInner{
-    margin-top: 2rem;
-  }
-  .third .owl-item {
-    margin: 0px 4rem;
-  }
-  .four .owl-item {
+      .desktopMenu {
+        display: none;
+      }
+      #slide-navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        width: 80%;
+        height: 100%;
+        background-color: var(--background-color);
+        overflow: auto;
+      }
+      .menu-overlay {
+        display: none;
+        background-color: #000;
+        bottom: 0;
+        left: 0;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        /* IE7 & 8 */
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 49;
+      }
+      .videoPanel img{
+        width: 99%;
+      }
+      .residentialInner{
+        margin-top: 2rem;
+      }
+      .third .owl-item {
+        margin: 0px 4rem;
+      }
+      .four .owl-item {
 
-    margin: auto 5rem;
-    margin-bottom: 1rem;
-  }
-  .formdiv{
-    margin-top: 2rem !important;
-    margin: 0 auto;
-  }
-  .contactdetails  {
-    padding: 2rem;
-  }
-  .socialmediaicons{
-    padding: 2rem;
+        margin: auto 5rem;
+        margin-bottom: 1rem;
+      }
+      .formdiv{
+        margin-top: 2rem !important;
+        margin: 0 auto;
+      }
+      .contactdetails  {
+        padding: 2rem;
+      }
+      .socialmediaicons{
+        padding: 2rem;
 
-  }
-  #footer{
-    padding: 2rem;
-  }
-  .postfooter{
-    padding: 2rem !important;
-  }
+      }
+      #footer{
+        padding: 2rem;
+      }
+      .postfooter{
+        padding: 2rem !important;
+      }
 
-  .rectangleDiv li{
-    width: 100%;
-    height: auto;
-    padding: 2rem 1rem;
-    padding: 1rem 0px;
-    margin: 0;
-  }
-  .rectangle a{
-    font-size: 1rem !important;
-  }
-  .li7{
-    width: 100% !important;
-    height: auto !important;
-    padding: 1rem 0px !important;
-    border-left: 0.1px solid var(--primary-button-background);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  
-  }
-  #overviewSection{
-    margin-top: 2rem;
-  }
-  .scrolldowndiv{
-    padding-bottom: 0px;
-  }
-  .limite{
-    display: none;
-  }
-  .animitieul {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0;
-  }
-  #whiteLillyResidencyPage .animitieul {
-    grid-template-columns: repeat(4, 1fr);
+      .rectangleDiv li{
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+        padding: 1rem 0px;
+        margin: 0;
+      }
+      .rectangle a{
+        font-size: 1rem !important;
+      }
+      .li7{
+        width: 100% !important;
+        height: auto !important;
+        padding: 1rem 0px !important;
+        border-left: 0.1px solid var(--primary-button-background);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      
+      }
+      #overviewSection{
+        margin-top: 2rem;
+      }
+      .scrolldowndiv{
+        padding-bottom: 0px;
+      }
+      .limite{
+        display: none;
+      }
+      .animitieul {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+      }
+      #whiteLillyResidencyPage .animitieul {
+        grid-template-columns: repeat(4, 1fr);
 
-  }
-  #parkersuites .animitieul {
-    grid-template-columns: repeat(4, 1fr);
+      }
+      #parkersuites .animitieul {
+        grid-template-columns: repeat(4, 1fr);
 
-  }
-  #locationSection .animitieul{
+      }
+      #whiteLillyPage .animitieul {
+        grid-template-columns: repeat(4, 1fr);
+
+      }
+      #locationSection .animitieul{
+        
+        display: flex;
+        justify-content: space-around;
+
+      }
+
+      #locationSection .animitieul li img {
+        height: 6rem !important;
+        width: 6rem !important;
+      }
+      #locationSection .animitieul li p{
+        font-size: 1rem;
+      }
+      .animitieul li{
+        margin: 0;
+      }
+      /* #amenitiesSection{
+        height: 37.077rem;
+      } */
+      .downloadbrochurediv img{
+        width: 60%;
+      }
+      .masterplansection img{
+        width: 85%;
+      }
+      #parkResidency .unitslayoutsection img{
+        width: 85%;
+      }
+      #whiteLillyResidencyPage #planSection img{
+        width: 95%;
+      }
+      #whiteLillyResidencyPage #moodvideo {
+        width: 48.462rem;
+        height: 46.154rem;
+      }
+
+
+      .infocontainer{
+        display: none;
+      }
+      .projectlogo{
+        display: none;
+      }
     
-    display: flex;
-    justify-content: space-around;
+      .parkresidencytable  img{
+        width: 60%;
+      }
+      #everything .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem; 
+      }
+      #operationalbrands ul li img{
+        width: 4.5rem;
+      }
+      .secondul{
+        display: flex !important;
+        justify-content: space-around !important;
+    }
+      .secondul li{
+        margin: auto !important;
+      }
+      #belowoperationalbrands h5 {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 2.038rem ;
+        font-weight: 400;
+        color: #ffffff;
+      }
+    #belowoperationalbrands img{
+      width: 10%;
+    }
+    /* #parkersuites #amenitiesSection{
+      height: 25.3rem;
+    } */
+    .aboutusheader h1{
+      color: #ffffff;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: auto;
+      padding-top: 20rem;
+      /* letter-spacing: 0; */
+    }
+    .secondenquiryrow  img{
+      width: 100%;
+    }
+    .emaildivquery  p{
+      font-size: 1rem;
+    }
+    .emaildivquery  a{
+      font-size: 1.8rem;
+    }
+    .emaildivquery div{
+      background: #00377b;
+      /* padding: 1rem; */
 
-  }
+    }
 
-  #locationSection .animitieul li img {
-    height: 6rem !important;
-    width: 6rem !important;
-  }
-  #locationSection .animitieul li p{
-    font-size: 1rem;
-  }
-  .animitieul li{
-    margin: 0;
-  }
-  /* #amenitiesSection{
-    height: 37.077rem;
-  } */
-  .downloadbrochurediv img{
-    width: 60%;
-  }
-  .masterplansection img{
-    width: 85%;
-  }
-  #parkResidency .unitslayoutsection img{
-    width: 85%;
-  }
-  #whiteLillyResidencyPage #planSection img{
-    width: 95%;
-  }
-  #whiteLillyResidencyPage #moodvideo {
-    width: 48.462rem;
-    height: 46.154rem;
-  }
+    #aboutus .grid-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem; 
+      margin: 0 4rem;
+    }
+    .timelineimg{
+      width: 80%;
+    }
+    .popup input ,select{
+      margin-left: 0px !important;
+    }
+    .popup label{
+      margin-left: 0px !important;
+    }
 
-  /* #parkResidency #amenitiesSection{
-    height: 25rem;
-  } */
-  .infocontainer{
-    display: none;
-  }
-  .projectlogo{
-    display: none;
-  }
-  /* #whiteLillyResidencyPage #amenitiesSection {
-    height: 38rem;
-  } */
-  .parkresidencytable  img{
-    width: 60%;
-  }
-  #everything .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem; 
-  }
-  #operationalbrands ul li img{
-    width: 4.5rem;
-  }
-  .secondul{
-    display: flex !important;
-    justify-content: space-around !important;
-}
-  .secondul li{
-    margin: auto !important;
-  }
-  #belowoperationalbrands h5 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 2.038rem ;
-    font-weight: 400;
-    color: #ffffff;
-  }
- #belowoperationalbrands img{
-  width: 10%;
- }
- /* #parkersuites #amenitiesSection{
-  height: 25.3rem;
- } */
- .aboutusheader h1{
-  color: #ffffff;
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: auto;
-  padding-top: 20rem;
-  /* letter-spacing: 0; */
-}
-.secondenquiryrow  img{
-  width: 100%;
-}
-.emaildivquery  p{
-  font-size: 1rem;
-}
-.emaildivquery  a{
-  font-size: 1.8rem;
-}
-.emaildivquery div{
-  background: #00377b;
-   padding: 1rem;
-
-}
-#aboutus .grid-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem; 
-  margin: 0 4rem;
-}
-.timelineimg{
-  width: 80%;
-}
-.popup input{
-  margin-left: 0px !important;
-}
-.popup label{
-  margin-left: 0px !important;
-}
-
-#contactusform input{
-  margin-left: 0px !important;
-}
-#contactusform label{
-  margin-left: 0px !important;
-}
-#contactusform{
-  padding: 3rem;
-}
-.managementTalkShadowDiv {
-  margin: auto;
-}
-.threediv ul {
-  flex-direction: column;
-}
+    #contactusform input{
+      margin-left: 0px !important;
+    }
+    #contactusform label{
+      margin-left: 0px !important;
+    }
+    #contactusform{
+      padding: 3rem;
+    }
+    .managementTalkShadowDiv {
+      margin: auto;
+    }
+    .threediv ul {
+      flex-direction: column;
+    }
+    #constructionthird .innersectionwork p{
+      font-size: 1.2rem;
+    }
+    #constructionfour .innersectionwork p{
+      font-size: 1.2rem;
+    }
+    #parkerconstruction .bannerheading{
+      font-size: 1.778rem;
+    }
+    .centered-div{
+      width: 90%;
+    }
+    .callpopup{
+      right: 2%;
+      width: 10%
+    }
+    .chatbot{
+      bottom: 8%;
+      width: 10%;
+    }
+    .vismis{
+      flex-direction: column;
+    }
+    .innervismis{
+      width: 100%;
+    }
+    .tesimonialCard{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .emaildivquery{
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    .emaildivquery .emailidcouloumn{
+      margin-bottom: 1rem;
+    }
+    #section8 .col-md-4{
+      display: flex;
+      justify-content: center;
+    }
+    #overviewSection h2{
+      margin-top: 2rem;
+    }
 }
 
  /* Tablets in portrait mode / */
 @media (min-width: 768px) and (max-width: 1023px) {
   
-  html {
-    font-size: 50%;
-  }
-  .desktopMenu{
-    display: none;
-  }
-  #slide-navbar-collapse {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    width: 80%;
-    height: 100%;
-    background-color: var(--background-color);
-    overflow: auto;
-  }
-  .menu-overlay {
-    display: none;
-    background-color: #000;
-    bottom: 0;
-    left: 0;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-    /* IE7 & 8 */
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 49;
-  }
+      html {
+        font-size: 50%;
+      }
+      .desktopMenu{
+        display: none;
+      }
+      #slide-navbar-collapse {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        width: 80%;
+        height: 100%;
+        background-color: var(--background-color);
+        overflow: auto;
+      }
+      .menu-overlay {
+        display: none;
+        background-color: #000;
+        bottom: 0;
+        left: 0;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        /* IE7 & 8 */
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 49;
+      }
 
-  .third .owl-item{
-    margin: 0px 2.308rem;
-  }
-  .four .owl-item {
-    margin: auto 3.269rem;
-    margin-bottom: 1rem;
-  }
-  .downloadbrochurediv img{
-    width: 60%;
-  }
-  .infocontainer{
-    display: none;
-  }
-  .projectlogo{
-    display: none;
-  }
-  .parkresidencytable  img{
-    width: 30%;
-  }
-  /* #parkersuites #amenitiesSection{
-    height: 50.3rem;
-   } */
-   #aboutus .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem; 
-    margin: 0 auto !important;
-  }
-  #aboutus .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem; 
-    margin: 0 4rem;
-  }
-  .timelineimg{
-    width: 80%;
-  }
-  .popup input{
-    margin-left: 0px !important;
-  }
-  .popup label{
-    margin-left: 0px !important;
-  }
-  
-  #contactusform input{
-    margin-left: 0px !important;
-  }
-  #contactusform label{
-    margin-left: 0px !important;
-  }
-  #contactusform{
-    padding: 3rem;
-  }
-  .managementTalkShadowDiv {
-    margin: auto;
-  }
-  .managementTalkShadowDiv2 {
-    margin: auto;
-  }
-  .threediv ul {
-    flex-direction: column;
-  }
+      .third .owl-item{
+        margin: 0px 2.308rem;
+      }
+      .four .owl-item {
+        margin: auto 3.269rem;
+        margin-bottom: 1rem;
+      }
+      .downloadbrochurediv img{
+        width: 60%;
+      }
+      .infocontainer{
+        display: none;
+      }
+      .projectlogo{
+        display: none;
+      }
+      .parkresidencytable  img{
+        width: 30%;
+      }
+      /* #parkersuites #amenitiesSection{
+        height: 50.3rem;
+      } */
+      #aboutus .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem; 
+        margin: 0 auto !important;
+      }
+      #aboutus .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem; 
+        margin: 0 4rem;
+      }
+      .timelineimg{
+        width: 80%;
+      }
+      .popup input, select{
+        margin-left: 0px !important;
+      }
+      .popup label{
+        margin-left: 0px !important;
+      }
+      
+      #contactusform input{
+        margin-left: 0px !important;
+      }
+      #contactusform label{
+        margin-left: 0px !important;
+      }
+      #contactusform{
+        padding: 3rem;
+      }
+      .managementTalkShadowDiv {
+        margin: auto;
+      }
+      .managementTalkShadowDiv2 {
+        margin: auto;
+      }
+      .threediv ul {
+        flex-direction: column;
+      }
+
+      .centered-div{
+        width: 90%;
+      }
+      .callpopup{
+        right: 2%;
+        width: 10%
+      }
+      .chatbot{
+        bottom: 8%;
+        width: 10%;
+      }
+
+      .vismis{
+        flex-direction: column;
+      }
+      .innervismis{
+        width: 100%;
+      }
+      .tesimonialCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+       .emaildivquery{
+        flex-direction: column;
+        margin-bottom: 1rem;
+      }
+      .emaildivquery .emailidcouloumn{
+        margin-bottom: 1rem;
+      }
 }
+
 /* / Tablets in landscape mode and small desktops / */
 @media (min-width: 1024px) and (max-width: 1399px) {
-  html {
-    font-size: 50%;
-  }
-  .mobileMenu{
-    display: none;
-  }
-  .videoPanel img{
-    width: 99%;
-  }
-  .masterplansection  img{
-    width: 72%;
-  }
-  #parkResidency .unitslayoutsection img{
-    width: 88%;
-  }
-  .downloadbrochurediv img{
-    width: 45%;
-  }
-  .projectlogo {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 13%;
-  }
+      html {
+        font-size: 50%;
+      }
+      .mobileMenu{
+        display: none;
+      }
+      .videoPanel img{
+        width: 99%;
+      }
+      .masterplansection  img{
+        width: 72%;
+      }
+      #parkResidency .unitslayoutsection img{
+        width: 88%;
+      }
+      .downloadbrochurediv img{
+        width: 45%;
+      }
+      .projectlogo {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 13%;
+      }
+      .parkresidencytable  img{
+        width: 30%;
+      }
 
-  /* #parkResidency #amenitiesSection{
-    height: 75rem;
-  } */
-  .parkresidencytable  img{
-    width: 30%;
-  }
-  /* #parkersuites #amenitiesSection{
-    height: 78.5rem;
-   } */
 }
 /* / Standard desktops and laptops / */
 @media (min-width: 1400px) and (max-width: 1919px) {
   
-html {
-  font-size: 55%;
-  scroll-behavior: smooth;
-}
+    html {
+      font-size: 55%;
+      scroll-behavior: smooth;
+    }
 
-  .third .owl-item{
-    margin: 0px 1.923rem;
-  }
-  .four .owl-item {
-    margin: auto 2.692rem;
-    margin-bottom: 1rem;
-  }
-  .mobileMenu{
-    display: none;
-  }
-  .videoPanel img{
-    width: 99%;
-  }
+      .third .owl-item{
+        margin: 0px 1.923rem;
+      }
+      .four .owl-item {
+        margin: auto 2.692rem;
+        margin-bottom: 1rem;
+      }
+      .mobileMenu{
+        display: none;
+      }
+      .videoPanel img{
+        width: 99%;
+      }
 
-  /* #amenitiesSection{
-    height: 1014px;
-  } */
-  .masterplansection  img{
-    width: 74.5%;
-  }
-  #parkResidency .unitslayoutsection img{
-    width: 87.5%;
-  }
-  .downloadbrochurediv img{
-    width: 45%;
-  }
-  #locationSection iframe {
-    height: 59.615rem;
-    width: 72.231rem;
-  }
-  .mapcol {
-    background: #ffffff;
-    padding: 1.5rem !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+      /* #amenitiesSection{
+        height: 1014px;
+      } */
+      .masterplansection  img{
+        width: 74.5%;
+      }
+      #parkResidency .unitslayoutsection img{
+        width: 87.5%;
+      }
+      .downloadbrochurediv img{
+        width: 45%;
+      }
+      #locationSection iframe {
+        height: 59.615rem;
+        width: 72.231rem;
+      }
+      .mapcol {
+        background: #ffffff;
+        padding: 1.5rem !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-  #uppergallerySection iframe {
-    width: 69.462rem;
-    height: 46.154rem;
-  }
+      #uppergallerySection iframe {
+        width: 69.462rem;
+        height: 46.154rem;
+      }
 
-  .projectlogo {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 13%;
-  }
-  #parkResidency .projectlogo {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 22%;
-  }
+      .projectlogo {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 13%;
+      }
+      #parkResidency .projectlogo {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 22%;
+      }
 
-  #parkResidency #amenitiesSection {
-    background: url(../images/park-residency/amenities.png);
-    /* height: 75rem; */
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .parkresidencytable  img{
-    width: 30%;
-  }
-  /* #parkersuites #amenitiesSection{
-    height: 80rem;
-   } */
-   .emailidcouloumn{
-    height: 22.596rem;
-    width: 72.308rem;
-  }
-  #whiteLillyResidencyPage #moodvideo {
-    width: 70rem;
-    height: 46rem
-  }
-  #parkersuites .projectlogo {
-    position: absolute;
-    top: 12%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-  #operationalbrands ul li img{
-    width: 95%;
-  }
-  .closecallpopupdiv {
-    position: absolute;
-    top: 15%;
-    right: 22%;
-  
-  }
+      #parkResidency #amenitiesSection {
+        background: url(../images/park-residency/amenities.png);
+        /* height: 75rem; */
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .parkresidencytable  img{
+        width: 30%;
+      }
+      /* #parkersuites #amenitiesSection{
+        height: 80rem;
+      } */
+      .emailidcouloumn{
+        height: 22.596rem;
+        width: 72.308rem;
+      }
+      #whiteLillyResidencyPage #moodvideo {
+        width: 70rem;
+        height: 46rem
+      }
+      #parkersuites .projectlogo {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+      }
+      #operationalbrands ul li img{
+        width: 95%;
+      }
+      .closecallpopupdiv {
+        position: absolute;
+        top: 15%;
+        right: 22%;
+      
+      }
 }
 /* / Large screens and high-resolution displays / */
 @media (min-width: 1920px) {
@@ -3144,36 +3342,36 @@ html {
       padding: 0;
       margin: 0;
     }
-    #section2 .owl-carousel .item {
-    /* height: 28.6rem;  */
-    /* width: 21rem; 
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-    border: 1px solid #939598;
+      #section2 .owl-carousel .item {
+      /* height: 28.6rem;  */
+      /* width: 21rem; 
+      display: flex;
+      justify-content: center;
+      align-items: center; */
+      border: 1px solid #939598;
 
-    /* margin-right: 1rem; */
-  }
-  .mobileMenu{
-    display: none;
-  }
-  .third{
-    width: 138.462rem;
-    display: flex;
-    justify-content: center;
-  }
-  .four{
-    width: 138.462rem;
-    display: flex;
-    justify-content: center;
-  }
-  .banner_banks {
-    width: 138.462rem;
-    display: flex;
-    justify-content: center;
-  }
-  .videoPanel .row{
-    width: 102%;
-  }
+      /* margin-right: 1rem; */
+    }
+    .mobileMenu{
+      display: none;
+    }
+    .third{
+      width: 138.462rem;
+      display: flex;
+      justify-content: center;
+    }
+    .four{
+      width: 138.462rem;
+      display: flex;
+      justify-content: center;
+    }
+    .banner_banks {
+      width: 138.462rem;
+      display: flex;
+      justify-content: center;
+    }
+    .videoPanel .row{
+      width: 102%;
+    }
 
 }
