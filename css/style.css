@@ -2747,7 +2747,30 @@ transition: all 0.5s linear;
 /************************************************ Parker Construction End ***************************************/
 
 
+/************************************************ Parker Blog Start ***************************************/
 
+
+.blogheader{
+  background: url(../images/whitelily-residency/amenities.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.readmoreblog{
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 2px solid var(--primary-button-background);
+  align-items: left;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+/************************************************ Parker Blog End ***************************************/
 
 
 /*************************************responsive website layout start  ***************************************/
